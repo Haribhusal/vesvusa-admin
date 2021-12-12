@@ -1,0 +1,85 @@
+a {
+  color: #fff;
+}
+i {
+  font-size: 1.5rem;
+}
+
+.highlight_text {
+  color: #fff !important;
+}
+.icon_small {
+  font-size: 1rem;
+}
+.brandedManagement {
+  .box {
+    display: none;
+  }
+}
+
+table {
+  td {
+    .actions {
+      .action {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        width: 40px;
+        border-radius: 100px;
+        text-align: center;
+        line-height: 40px;
+        border: 1px solid transparent;
+        i {
+          font-size: 20px;
+        }
+        &:hover {
+          color: #db6574;
+          border-color: #db6574;
+        }
+      }
+    }
+  }
+}
+
+.selection {
+  width: 100%;
+}
+
+.select2-container--default .select2-selection--single {
+  background-color: #2d3035;
+  border: 1px solid #40444b;
+  padding: 0.375rem 0.75rem;
+}
+
+.select2-hidden-accessible {
+  height: 100%;
+}
+.select2-container .select2-selection--single {
+  height: 100%;
+}
+
+.select2-dropdown {
+  background-color: #2d3035;
+  border: 1px solid #40444b;
+}
+.select2-container--default .select2-results__option--selected {
+  background-color: #2d3035;
+}
+.select2-search__field {
+  background-color: #4e535c;
+  border: none !important;
+  padding: 0.375rem 0.75rem !important;
+
+  color: #fff;
+}
+
+.select2-search .select2-search--dropdown {
+  padding: 10px 15px !important;
+}
+.select2-container--default
+  .select2-results__option--highlighted.select2-results__option--selectable {
+  background-color: #3a3f49 !important;
+  color: white;
+}

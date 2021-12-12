@@ -1,0 +1,18 @@
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 99;
+
+  nav {
+    img {
+      max-width: 90px;
+    }
+  }
+}
+
+.sidebar-item.active > .sidebar-link {
+  color: #fff !important;
+}

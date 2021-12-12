@@ -1,0 +1,350 @@
+@font-face {
+  font-family: Mollen;
+  src: url(../fonts/mollen-personal-use/MRegular.otf);
+}
+
+@font-face {
+  font-family: Romelio;
+  src: url(../fonts/romelio_sans/Romelio.otf);
+}
+
+a {
+  color: #fff;
+}
+
+i {
+  font-size: 1.5rem;
+}
+
+.highlight_text {
+  color: #fff !important;
+}
+
+.icon_small {
+  font-size: 1rem;
+}
+
+.brandedManagement .box {
+  display: none;
+}
+
+table td .actions .action {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 100px;
+  text-align: center;
+  line-height: 40px;
+  border: 1px solid transparent;
+}
+
+table td .actions .action i {
+  font-size: 20px;
+}
+
+table td .actions .action:hover {
+  color: #db6574;
+  border-color: #db6574;
+}
+
+.selection {
+  width: 100%;
+}
+
+.select2-container--default .select2-selection--single {
+  background-color: #2d3035;
+  border: 1px solid #40444b;
+  padding: 0.375rem 0.75rem;
+}
+
+.select2-hidden-accessible {
+  height: 100%;
+}
+
+.select2-container .select2-selection--single {
+  height: 100%;
+}
+
+.select2-dropdown {
+  background-color: #2d3035;
+  border: 1px solid #40444b;
+}
+
+.select2-container--default .select2-results__option--selected {
+  background-color: #2d3035;
+}
+
+.select2-search__field {
+  background-color: #4e535c;
+  border: none !important;
+  padding: 0.375rem 0.75rem !important;
+  color: #fff;
+}
+
+.select2-search .select2-search--dropdown {
+  padding: 10px 15px !important;
+}
+
+.select2-container--default
+.select2-results__option--highlighted.select2-results__option--selectable {
+  background-color: #3a3f49 !important;
+  color: white;
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+  height: 100%;
+}
+
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.sidebar-sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 9;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+header nav img {
+  max-width: 90px;
+}
+
+.sidebar-item.active > .sidebar-link {
+  color: #fff !important;
+}
+
+.font_p {
+  font-family: Mollen;
+}
+
+body {
+  font-family: Mollen;
+}
+
+.f12 {
+  font-size: 12px;
+}
+
+.f16 {
+  font-size: 16px;
+}
+
+.f20 {
+  font-size: 20px;
+}
+
+.f24 {
+  font-size: 24px;
+}
+
+.f28 {
+  font-size: 28px;
+}
+
+.f32 {
+  font-size: 32px;
+}
+
+.f36 {
+  font-size: 36px;
+}
+
+.f40 {
+  font-size: 40px;
+}
+
+.f44 {
+  font-size: 44px;
+}
+
+.f48 {
+  font-size: 48px;
+}
+
+.f52 {
+  font-size: 52px;
+}
+
+.spacedText {
+  letter-spacing: 4px;
+}
+
+.gap {
+  gap: 20px;
+}
+
+.flex1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.flex2 {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.flex3 {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
+.flex4 {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+}
+
+.flex5 {
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+}
+
+.flex6 {
+  -webkit-box-flex: 6;
+      -ms-flex: 6;
+          flex: 6;
+}
+
+.flex7 {
+  -webkit-box-flex: 7;
+      -ms-flex: 7;
+          flex: 7;
+}
+
+.flex8 {
+  -webkit-box-flex: 8;
+      -ms-flex: 8;
+          flex: 8;
+}
+
+.flex9 {
+  -webkit-box-flex: 9;
+      -ms-flex: 9;
+          flex: 9;
+}
+
+.flex10 {
+  -webkit-box-flex: 10;
+      -ms-flex: 10;
+          flex: 10;
+}
+
+.flex11 {
+  -webkit-box-flex: 11;
+      -ms-flex: 11;
+          flex: 11;
+}
+
+.flex12 {
+  -webkit-box-flex: 12;
+      -ms-flex: 12;
+          flex: 12;
+}
+
+::-moz-selection {
+  color: #fff;
+  background-color: #930c0c;
+}
+
+::selection {
+  color: #fff;
+  background-color: #930c0c;
+}
+/*# sourceMappingURL=style.css.map */
