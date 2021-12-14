@@ -237,6 +237,9 @@
                   class="las la-angle-right icon_small px-2"></i>
                 Size Management
               </h2>
+              <div class="action">
+                <a href="#guide">Size Guide</a>
+              </div>
 
             </div>
 
@@ -337,6 +340,9 @@
               </div>
 
 
+
+
+
             </div>
             <div class="col-sm-4">
               <div class="formwrapper">
@@ -378,25 +384,32 @@
 
               </div>
 
+
+
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
               <hr />
-              <div class="formwrapper">
+              <div class="formwrapper" id="guide">
                 <div class="card">
                   <div class="card-body">
                     <div class="heading d-flex justify-content-between ">
                       <div class="left">
 
                         <strong class="highlight_text">Size Guide Chart</strong>
-                        <div class="">
+                        <div class="mb-3">
                           <small class="text-muted">Optional</small>
                         </div>
                       </div>
 
                     </div>
-                    <hr />
+
                     <form action="">
                       <textarea name="editor1"></textarea>
                       <div class="form-group mb-2 mt-3">
-                        <button class="btn btn-primary">Add Size</button>
+                        <button class="btn btn-primary">Add Size Guide</button>
                     </form>
                   </div>
                 </div>
@@ -407,6 +420,8 @@
               </div>
             </div>
           </div>
+
+
           <!-- Modal Form-->
           <div class="modal fade text-start" id="myModal" tabindex="-1" aria-labelledby="myModalLabel"
             aria-hidden="true">
@@ -457,9 +472,7 @@
   <!-- Main File-->
   <script src="js/front.js"></script>
   <script>
-    CKEDITOR.replace('editor1', {
-      skin: 'moonocolor,/myskins/moonocolor/'
-    });
+    CKEDITOR.replace('editor1');
   </script>
   <script>
     $(document).ready(function () {

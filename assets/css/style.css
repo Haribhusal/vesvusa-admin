@@ -63,6 +63,7 @@ table td .actions .action:hover {
 
 .select2-selection__rendered {
   color: #fff !important;
+  width: 100% !important;
 }
 
 .select2-container--default .select2-selection--single {
@@ -126,6 +127,10 @@ table td .actions .action:hover {
   color: white;
 }
 
+.select2-selection:focus {
+  border-color: #3a3f49 !important;
+}
+
 .select2-selection {
   position: relative !important;
 }
@@ -137,6 +142,93 @@ table td .actions .action:hover {
   right: 10px;
   -webkit-transform: translateY(-50%) !important;
           transform: translateY(-50%) !important;
+}
+
+.tabswrapper .nav-tabs {
+  border-bottom: 1px solid transparent;
+}
+
+.tabswrapper .nav-item .nav-link {
+  color: #fff;
+  padding: 15px;
+  border: 1px solid transparent;
+  border-radius: 0;
+}
+
+.tabswrapper .nav-item .nav-link.active {
+  color: #fff;
+  background-color: #db65752a;
+}
+
+.select2-container--default .select2-selection--multiple {
+  border: 1px solid #40444b;
+  background-color: #2d3035;
+}
+
+.select2-container--default
+.select2-selection--multiple
+.select2-selection__choice {
+  background-color: #2d3035;
+  border: 1px solid #40444b;
+  color: #fff;
+}
+
+.select2-results__option--selected {
+  background-color: #404958 !important;
+}
+
+.select2-container--default
+.select2-selection--multiple
+.select2-selection__choice__remove {
+  border-color: #40444b;
+}
+
+.select2-container--default.select2-container--focus
+.select2-selection--multiple {
+  border-color: #40444b !important;
+}
+
+.select2-search .select2-search--inline,
+.select2-search__field {
+  width: 100% !important;
+  display: block !important;
+}
+
+.select2-search .select2-search--inline {
+  display: block !important;
+  width: 100% !important;
+}
+
+.form-control {
+  color: #fff !important;
+}
+
+.imagesOrder ul#image-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+
+.imagesOrder ul#image-list li {
+  cursor: move;
+}
+
+.imagesOrder ul#image-list li img {
+  width: auto !important;
+  height: 100px;
+  border-radius: 5px;
+}
+
+.withImages {
+  padding: 25px;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 0px;
 }
 
 /*

@@ -17,6 +17,9 @@
   <link rel="stylesheet"
     href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
   <!-- Custom stylesheet - for your changes-->
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="http://releases.jquery.com/git/ui/jquery-ui-git.css">
+
   <link rel="stylesheet" href="css/custom.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <!-- Favicon-->
@@ -246,332 +249,217 @@
 
       <section class="mt-0">
         <div class="container-fluid">
-          <div class="row gy-4 ">
-            <!-- Inline Form-->
-
-
-            <!-- Form Elements -->
-            <div class="col-lg-12">
-              <div class="card">
-
-                <div class="card-body pt-4">
-                  <form class="form-horizontal">
-                    <div class="row">
-                      <label class="col-sm-3 form-label">Product Category</label>
-                      <div class="col-sm-9">
-                        <select class="form-select mb-3" name="account">
-                          <option>Beauty</option>
-                          <option>Fashion</option>
-                          <option>Lifestyle</option>
-                        </select>
+          <form class="form-horizontal" action="product-list.html" method="post">
+            <div class="row gy-4 ">
+              <!-- Inline Form-->
+              <!-- Form Elements -->
+              <div class="col-lg-12">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="heading d-flex justify-content-between ">
+                      <div class="left">
+                        <strong class="highlight_text">Product Basics </strong>
                       </div>
 
                     </div>
-                    <div class="my-2"></div>
-                    <div class="brandedManagement">
-                      <div class="row brandedCheck">
-                        <label class="col-sm-3 form-label">Branded or Unbranded </label>
-                        <div class="col-sm-9">
-                          <div class="d-flex gap">
-                            <label><input class="form-check-input" type="radio" name="colorRadio" value="branded">
-                              Branded
-                              Product</label>
-                            <label><input class="form-check-input" type="radio" name="colorRadio" value="unbranded">
-                              Unbranded Product</label>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="my-2"></div>
-                      <div class="branded box">
-                        <div class="row ">
-                          <label class="col-sm-3 form-label">Select Brand</label>
-                          <div class="col-sm-9">
-                            <div class="">
-                              <div class="d-flex gap">
-                                <select name="" id="" class="form-control">
-                                  <option value="1">Puma</option>
-                                  <option value="2">Addidas</option>
-                                  <option value="3">Levis</option>
-                                </select>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="unbranded box">
-                      </div>
-                    </div>
-                    <div class="my-2"></div>
+                    <hr />
 
                     <div class="row">
-                      <label class="col-sm-3 form-label">Product Name</label>
-                      <div class="col-sm-9">
-                        <input class="form-control" type="text" placeholder="Product Name">
-                      </div>
-                    </div>
-                    <div class="my-4"></div>
-                    <div class="row">
-                      <label class="col-sm-3 form-label">Help text</label>
-                      <div class="col-sm-9">
-                        <input class="form-control" type="text"><small class="form-text">A block of help text that
-                          breaks onto a new line and may extend beyond one line.</small>
-                      </div>
-                    </div>
-                    <div class="my-4"></div>
-                    <div class="row">
-                      <label class="col-sm-3 form-label">Password</label>
-                      <div class="col-sm-9">
-                        <input class="form-control" type="password" name="password">
-                      </div>
-                    </div>
-                    <div class="my-4"></div>
-                    <div class="row">
-                      <label class="col-sm-3 form-label">Placeholder</label>
-                      <div class="col-sm-9">
-                        <input class="form-control" type="text" placeholder="placeholder">
-                      </div>
-                    </div>
-                    <div class="my-4"></div>
-                    <div class="row">
-                      <label class="col-sm-3 form-label">Disabled</label>
-                      <div class="col-sm-9">
-                        <input class="form-control" type="text" disabled="" placeholder="Disabled input here...">
-                      </div>
-                    </div>
-                    <div class="my-4"></div>
-                    <div class="row">
-                      <label class="col-sm-3 form-label">Checkboxes &amp; radios <br><small class="text-primary">Custom
-                          elements</small></label>
-                      <div class="col-sm-9">
-                        <div class="form-check">
-                          <input class="form-check-input" id="defaultCheck0" type="checkbox">
-                          <label class="form-check-label" for="defaultCheck0">Option one</label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" id="defaultCheck1" type="checkbox" checked>
-                          <label class="form-check-label" for="defaultCheck1">Option two checked</label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" id="defaultCheck2" type="checkbox" checked disabled>
-                          <label class="form-check-label" for="defaultCheck2">Option three checked and
-                            disabled</label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" id="defaultCheck3" type="checkbox" disabled>
-                          <label class="form-check-label" for="defaultCheck3">Option four disabled</label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" id="defaultRadio0" type="radio" name="exampleRadios">
-                          <label class="form-check-label" for="defaultRadio0">Option one</label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" id="defaultRadio1" type="radio" name="exampleRadios" checked>
-                          <label class="form-check-label" for="defaultRadio1">Option two checked</label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" id="defaultRadio2" type="radio" name="exampleRadios" checked
-                            disabled>
-                          <label class="form-check-label" for="defaultRadio2">Option three checked and
-                            disabled</label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" id="defaultRadio3" type="radio" name="exampleRadios" disabled>
-                          <label class="form-check-label" for="defaultRadio3">Option four disabled</label>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="my-4"></div>
+                      <div class="col-sm-6">
+                        <div class="form-group mb-2">
+                          <label for="cat"><small>Select Category</small></label>
+                          <select class='selCategory' style="width: 100%;">
+                            <option value='0'>Select Category</option>
+                            <option value='1'>Beauty</option>
+                            <option value='2'>Fashion</option>
+                            <option value='3'>Lifestyle</option>
 
-                    <div class="my-4"></div>
-                    <div class="row">
-                      <label class="col-sm-3 form-label" for="formFile">File input</label>
-                      <div class="col-sm-9">
-                        <input class="form-control" id="formFile" type="file">
-                      </div>
-                    </div>
-                    <div class="my-4"></div>
-                    <div class="row">
-                      <label class="col-sm-3 form-label">Input with success</label>
-                      <div class="col-sm-9">
-                        <input class="form-control is-valid" type="text">
-                        <div class="valid-feedback">Looks good!</div>
-                      </div>
-                    </div>
-                    <div class="my-4"></div>
-                    <div class="row">
-                      <label class="col-sm-3 form-label">Input with error</label>
-                      <div class="col-sm-9">
-                        <input class="form-control is-invalid" type="text">
-                        <div class="invalid-feedback">Please provide your name.</div>
-                      </div>
-                    </div>
-                    <div class="my-4"></div>
-                    <div class="row">
-                      <label class="col-sm-3 form-label">Control sizing</label>
-                      <div class="col-sm-9">
-                        <input class="form-control form-control-lg mb-3" type="text" placeholder=".input-lg">
-                        <input class="form-control mb-3" type="text" placeholder="Default input">
-                        <input class="form-control form-control-sm mb-3" type="text" placeholder=".input-sm">
-                      </div>
-                    </div>
-                    <div class="my-4"></div>
-                    <div class="row">
-                      <label class="col-sm-3 form-label">Column sizing</label>
-                      <div class="col-sm-9">
-                        <div class="row">
-                          <div class="col-md-3">
-                            <input class="form-control" type="text" placeholder=".col-md-3">
-                          </div>
-                          <div class="col-md-4">
-                            <input class="form-control" type="text" placeholder=".col-md-4">
-                          </div>
-                          <div class="col-md-5">
-                            <input class="form-control" type="text" placeholder=".col-md-5">
-                          </div>
+                          </select>
                         </div>
                       </div>
-                    </div>
-                    <div class="my-4"> </div>
-                    <div class="row">
-                      <label class="col-sm-3 form-label">Material Inputs</label>
-                      <div class="col-sm-9">
-                        <div class="input-material-group mb-3">
-                          <input class="input-material" id="register-username" type="text" name="registerUsername"
-                            required value="Jason Doe">
-                          <label class="label-material" for="register-username">Username</label>
+                      <div class="col-sm-6">
+                        <div class="form-group mb-2">
+                          <label for="cat"><small>Select Product Category</small></label>
+                          <select class='selCategory' style="width: 100%;">
+                            <option value='0'>Select Product Category</option>
+                            <option value='1'>Makeup</option>
+                            <option value='2'>Skin </option>
+                            <option value='3'>Hair</option>
+                            <option value='4'>Appliances</option>
+
+                          </select>
                         </div>
-                        <div class="input-material-group mb-3">
-                          <input class="input-material" id="register-email" type="email" name="registerEmail" required>
-                          <label class="label-material" for="register-email">Email Address </label>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group mb-2">
+                          <label for="cat"><small>Select Brand</small></label>
+                          <select class='selCategory' style="width: 100%;">
+                            <option value='0'>Select Brand</option>
+                            <option value='1'>Makeup</option>
+                            <option value='2'>Skin </option>
+                            <option value='3'>Hair</option>
+                            <option value='4'>Appliances</option>
+                          </select>
                         </div>
-                        <div class="input-material-group mb-3">
-                          <input class="input-material" id="register-password" type="password" name="registerPassword"
-                            required>
-                          <label class="label-material" for="register-password">Password </label>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group mb-2">
+                          <label for="cat"><small>Weight Attributes</small></label>
+                          <select class='selCategory' style="width: 100%;">
+                            <option value='0'>Gm</option>
+                            <option value='1'>Ml</option>
+
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-sm-12">
+                        <div class="form-group mb-2">
+                          <label for="cat"><small>Product Name</small></label>
+                          <input type="text" class="form-control" placeholder="Product Name">
+                        </div>
+                      </div>
+                      <div class="col-sm-12">
+                        <div class="form-group mb-2">
+                          <label for="cat"><small>Shades</small></label>
+                          <select class='selShade' style="width: 100%;" multiple="multiple">
+                            <option value='0'>Shade 1</option>
+                            <option value='1'>Shade 2</option>
+                            <option value='1'>Shade 3</option>
+                            <option value='1'>Shade 4</option>
+                            <option value='1'>Shade 5</option>
+                          </select>
                         </div>
                       </div>
                     </div>
-                    <div class="my-4"></div>
-                    <div class="row">
-                      <label class="col-sm-3 form-label">Input groups</label>
-                      <div class="col-sm-9">
-                        <div class="input-group mb-3"><span class="input-group-text" id="basic-addon1">@</span>
-                          <input class="form-control" type="text" placeholder="Username" aria-label="Username"
-                            aria-describedby="basic-addon1">
-                        </div>
-                        <div class="input-group mb-3">
-                          <input class="form-control" type="text" placeholder="Username" aria-label="Username"
-                            aria-describedby="basic-addon2"><span class="input-group-text" id="basic-addon2">@</span>
-                        </div>
-                        <div class="input-group mb-3">
-                          <div class="input-group-text">
-                            <input class="form-check-input mt-0" type="checkbox"
-                              aria-label="Checkbox for following text input">
-                          </div>
-                          <input class="form-control" type="text" aria-label="Text input with checkbox">
-                        </div>
-                        <div class="input-group mb-3">
-                          <input class="form-control" type="text" aria-label="Text input with radio button">
-                          <div class="input-group-text">
-                            <input class="form-check-input mt-0" type="radio"
-                              aria-label="Radio button for following text input">
-                          </div>
-                        </div>
-                        <div class="input-group mb-3"><span class="input-group-text">$</span><span
-                            class="input-group-text">0.00</span>
-                          <input class="form-control" type="text"
-                            aria-label="Dollar amount (with dot and two decimal places)">
-                        </div>
-                        <div class="input-group">
-                          <input class="form-control" type="text"
-                            aria-label="Dollar amount (with dot and two decimal places)"><span
-                            class="input-group-text">$</span><span class="input-group-text">0.00</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="my-4"></div>
-                    <div class="row">
-                      <label class="col-sm-3 form-label">Button addons</label>
-                      <div class="col-sm-9">
-                        <div class="input-group mb-3">
-                          <button class="btn btn-primary" id="button-addon1" type="button">Button</button>
-                          <input class="form-control" type="text" placeholder
-                            aria-label="Example text with button addon" aria-describedby="button-addon1">
-                        </div>
-                        <div class="input-group">
-                          <input class="form-control" type="text" placeholder="Recipient's username"
-                            aria-label="Recipient's username" aria-describedby="button-addon2">
-                          <button class="btn btn-primary" id="button-addon2" type="button">Button</button>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="my-4"></div>
-                    <div class="row">
-                      <label class="col-sm-3 form-label">With dropdowns</label>
-                      <div class="col-sm-9">
-                        <div class="input-group">
-                          <button class="btn btn-outline-secondary dropdown-toggle" type="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
-                          <ul class="dropdown-menu dropdown-menu-dark shadow-sm">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            <li><a class="dropdown-item" href="#">Separated link</a></li>
-                          </ul>
-                          <input class="form-control" type="text" aria-label="Text input with dropdown button">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="my-4"></div>
-                    <div class="row">
-                      <div class="col-sm-9 ms-auto">
-                        <button class="btn btn-secondary" type="reset">Cancel</button>
-                        <button class="btn btn-primary" type="submit">Save changes</button>
-                      </div>
-                    </div>
-                  </form>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <!-- Modal Form-->
-            <div class="col-lg-12">
-              <div class="card">
-                <div class="card-header">
-                  <h3 class="mb-0">Signin Modal</h3>
-                </div>
-                <div class="card-body pt-0 text-center">
-                  <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#myModal">Form
-                    in simple modal </button>
-                  <!-- Modal-->
-                  <div class="modal fade text-start" id="myModal" tabindex="-1" aria-labelledby="myModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="myModalLabel">Signin Modal</h5>
-                          <button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal"
-                            aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                          <p>Lorem ipsum dolor sit amet consectetur.</p>
-                          <form>
-                            <div class="mb-3">
-                              <label class="form-label" for="modalInputEmail1">Email address</label>
-                              <input class="form-control" id="modalInputEmail1" type="email"
-                                aria-describedby="emailHelp">
-                              <div class="form-text" id="emailHelp">We'll never share your email with anyone else.
+            </div>
+            <hr />
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="heading d-flex justify-content-between ">
+                      <div class="left">
+                        <strong class="highlight_text">Product Variants </strong>
+                      </div>
+                    </div>
+                    <hr />
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <div class="withImages">
+
+
+                          <div class="variantRow d-flex gap ">
+                            <div class="form-group flex2">
+                              <label for="cat"><small>Variant Name</small></label>
+                              <input type="text" class="form-control" placeholder="Variant Name" value="Dark Gray">
+                            </div>
+                            <div class="form-group flex2">
+                              <label for="cat"><small>Product MRP</small></label>
+                              <input type="number" class="form-control" placeholder="Product MRP">
+                            </div>
+                            <div class="form-group flex1">
+                              <label for="cat"><small>Opening Stock</small></label>
+                              <input type="number" class="form-control" placeholder="O.Stock">
+                            </div>
+                            <div class="form-group flex2">
+                              <label for="cat"><small>Featured Image</small></label>
+                              <input type="file" class="form-control">
+                            </div>
+                            <div class="form-group flex3">
+                              <label for="cat"><small>Product Images</small></label>
+                              <input type="file" class="form-control" multiple>
+                            </div>
+                          </div>
+
+                          <div class="imagesOrder">
+                            <div id="gallery">
+
+                              <div id="image-container">
+
+                                <div id="txtresponse"> </div>
+                                <ul id="image-list" class="mt-3">
+                                  <li>
+                                    <img src="https://picsum.photos/id/10/500/500" alt="">
+                                  </li>
+                                  <li>
+                                    <img src="https://picsum.photos/id/12/500/500" alt="">
+                                  </li>
+                                  <li>
+                                    <img src="https://picsum.photos/id/14/500/500" alt="">
+                                  </li>
+                                  <li>
+                                    <img src="https://picsum.photos/id/16/500/500" alt="">
+                                  </li>
+                                  <li>
+                                    <img src="https://picsum.photos/id/18/500/500" alt="">
+                                  </li>
+                                  <!-- <?php
+                if ($result->num_rows > 0) {
+                    while ($row = $result->fetch_assoc()) {
+
+                        $imageId = $row['id'];
+                        $imageName = $row['image_name'];
+                        $imagePath = $row['image_path'];
+
+                        echo '<li id="image_' . $imageId . '" >
+                        <img src="' . $imagePath . '" alt="' . $imageName . '"></li>';
+                    }
+                }
+                ?> -->
+                                </ul>
+
                               </div>
+
                             </div>
-                            <div class="mb-3">
-                              <label class="form-label" for="modalInputPassword1">Password</label>
-                              <input class="form-control" id="modalInputPassword1" type="password">
-                            </div>
-                          </form>
+                          </div>
                         </div>
-                        <div class="modal-footer">
-                          <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Close</button>
-                          <button class="btn btn-primary" type="button">Save changes</button>
+                        <div class="variantRow d-flex gap mb-3">
+                          <div class="form-group mb-2 flex2">
+                            <label for="cat"><small>Variant Name</small></label>
+                            <input type="text" class="form-control" placeholder="Variant Name" value="Dark Gray">
+                          </div>
+                          <div class="form-group mb-2 flex2">
+                            <label for="cat"><small>Product MRP</small></label>
+                            <input type="number" class="form-control" placeholder="Product MRP">
+                          </div>
+                          <div class="form-group mb-2 flex1">
+                            <label for="cat"><small>Opening Stock</small></label>
+                            <input type="number" class="form-control" placeholder="O.Stock">
+                          </div>
+                          <div class="form-group mb-2 flex2">
+                            <label for="cat"><small>Featured Image</small></label>
+                            <input type="file" class="form-control">
+                          </div>
+                          <div class="form-group mb-2 flex3">
+                            <label for="cat"><small>Product Images</small></label>
+                            <input type="file" class="form-control" multiple>
+                          </div>
+                        </div>
+                        <div class="variantRow d-flex gap mb-3">
+                          <div class="form-group mb-2 flex2">
+                            <label for="cat"><small>Variant Name</small></label>
+                            <input type="text" class="form-control" placeholder="Variant Name" value="Dark Gray">
+                          </div>
+                          <div class="form-group mb-2 flex2">
+                            <label for="cat"><small>Product MRP</small></label>
+                            <input type="number" class="form-control" placeholder="Product MRP">
+                          </div>
+                          <div class="form-group mb-2 flex1">
+                            <label for="cat"><small>Opening Stock</small></label>
+                            <input type="number" class="form-control" placeholder="O.Stock">
+                          </div>
+                          <div class="form-group mb-2 flex2">
+                            <label for="cat"><small>Featured Image</small></label>
+                            <input type="file" class="form-control">
+                          </div>
+                          <div class="form-group mb-2 flex3">
+                            <label for="cat"><small>Product Images</small></label>
+                            <input type="file" class="form-control" multiple>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -579,9 +467,37 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
+            <hr />
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="heading d-flex justify-content-between ">
+                      <div class="left">
+                        <strong class="highlight_text">Product Description </strong>
+                      </div>
+                    </div>
+                    <hr />
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <textarea name="editor1"></textarea>
+                      </div>
+                    </div>
 
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="row">
+              <div class="col-sm-12">
+
+
+                <button class="btn btn-primary ">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
       </section>
 
 
@@ -600,13 +516,73 @@
   <!-- JavaScript files-->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"
+    integrity="sha256-hlKLmzaRlE8SCJC1Kw8zoUbU8BxA+8kR3gseuKfMjxA=" crossorigin="anonymous"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="vendor/just-validate/js/just-validate.min.js"></script>
   <script src="vendor/chart.js/Chart.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+
   <script src="vendor/choices.js/public/assets/scripts/choices.min.js"></script>
   <script src="js/charts-home.js"></script>
+  <script src="https://cdn.ckeditor.com/4.17.1/standard/ckeditor.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      var dropIndex;
+      $("#image-list").sortable({
+        update: function (event, ui) {
+          dropIndex = ui.item.index();
+        }
+      });
+
+      $('#submit').click(function (e) {
+        var imageIdsArray = [];
+        $('#image-list li').each(function (index) {
+          if (index <= dropIndex) {
+            var id = $(this).attr('id');
+            var split_id = id.split("_");
+            imageIdsArray.push(split_id[1]);
+          }
+        });
+
+        $.ajax({
+          url: 'reorderUpdate.php',
+          type: 'post',
+          data: {
+            imageIds: imageIdsArray
+          },
+          success: function (response) {
+            $("#txtresponse").css('display', 'inline-block');
+            $("#txtresponse").text(response);
+          }
+        });
+        e.preventDefault();
+      });
+    });
+  </script>
+
   <!-- Main File-->
   <script src="js/front.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".selCategory").select2({
+        placeholder: "Type Here to Search",
+      });
+    });
+  </script>
+  <script>
+    CKEDITOR.replace('editor1');
+  </script>
+
+
+  <script>
+    $(document).ready(function () {
+      $(".selShade").select2({
+        placeholder: "Select Shades - MultiSelect",
+      });
+    });
+  </script>
 
 
   <script>
