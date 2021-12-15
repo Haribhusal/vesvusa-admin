@@ -286,7 +286,6 @@
                             <option value='2'>Skin </option>
                             <option value='3'>Hair</option>
                             <option value='4'>Appliances</option>
-
                           </select>
                         </div>
                       </div>
@@ -308,7 +307,6 @@
                           <select class='selCategory' style="width: 100%;">
                             <option value='0'>Gm</option>
                             <option value='1'>Ml</option>
-
                           </select>
                         </div>
                       </div>
@@ -334,7 +332,6 @@
                   </div>
                 </div>
               </div>
-
             </div>
             <hr />
             <div class="row">
@@ -350,8 +347,6 @@
                     <div class="row">
                       <div class="col-sm-12">
                         <div class="withImages">
-
-
                           <div class="variantRow d-flex gap ">
                             <div class="form-group flex2">
                               <label for="cat"><small>Variant Name</small></label>
@@ -361,7 +356,7 @@
                               <label for="cat"><small>Product MRP</small></label>
                               <input type="number" class="form-control" placeholder="Product MRP">
                             </div>
-                            <div class="form-group flex1">
+                            <div class="form-group flex2">
                               <label for="cat"><small>Opening Stock</small></label>
                               <input type="number" class="form-control" placeholder="O.Stock">
                             </div>
@@ -369,98 +364,298 @@
                               <label for="cat"><small>Featured Image</small></label>
                               <input type="file" class="form-control">
                             </div>
-                            <div class="form-group flex3">
+                            <div class="form-group flex2">
                               <label for="cat"><small>Product Images</small></label>
                               <input type="file" class="form-control" multiple>
                             </div>
                           </div>
-
                           <div class="imagesOrder">
-                            <div id="gallery">
-
-                              <div id="image-container">
-
-                                <div id="txtresponse"> </div>
-                                <ul id="image-list" class="mt-3">
+                            <div id="gallery" class=" mt-2 d-flex gap justify-content-between">
+                              <div class="featured">
+                                <div class="">
+                                  <small class="text-muted">Featured Image</small>
+                                </div>
+                                <img src="https://picsum.photos/id/55/100/100" alt="">
+                              </div>
+                              <div id="image-container" class="productGallery">
+                                <div class="">
+                                  <small class="text-muted">Product Images - drag and drop images to assign the
+                                    order.</small>
+                                </div>
+                                <ul class="image-list" class="">
                                   <li>
+                                    <div class="delete">
+                                      <i class="las la-trash"></i>
+                                    </div>
                                     <img src="https://picsum.photos/id/10/500/500" alt="">
                                   </li>
                                   <li>
+                                    <div class="delete">
+                                      <i class="las la-trash"></i>
+                                    </div>
                                     <img src="https://picsum.photos/id/12/500/500" alt="">
                                   </li>
                                   <li>
+                                    <div class="delete">
+                                      <i class="las la-trash"></i>
+                                    </div>
                                     <img src="https://picsum.photos/id/14/500/500" alt="">
                                   </li>
                                   <li>
+                                    <div class="delete">
+                                      <i class="las la-trash"></i>
+                                    </div>
                                     <img src="https://picsum.photos/id/16/500/500" alt="">
                                   </li>
                                   <li>
+                                    <div class="delete">
+                                      <i class="las la-trash"></i>
+                                    </div>
                                     <img src="https://picsum.photos/id/18/500/500" alt="">
                                   </li>
-                                  <!-- <?php
-                if ($result->num_rows > 0) {
-                    while ($row = $result->fetch_assoc()) {
-
-                        $imageId = $row['id'];
-                        $imageName = $row['image_name'];
-                        $imagePath = $row['image_path'];
-
-                        echo '<li id="image_' . $imageId . '" >
-                        <img src="' . $imagePath . '" alt="' . $imageName . '"></li>';
-                    }
-                }
-                ?> -->
+                                  <li>
+                                    <div class="delete">
+                                      <i class="las la-trash"></i>
+                                    </div>
+                                    <img src="https://picsum.photos/id/10/500/500" alt="">
+                                  </li>
+                                  <li>
+                                    <div class="delete">
+                                      <i class="las la-trash"></i>
+                                    </div>
+                                    <img src="https://picsum.photos/id/12/500/500" alt="">
+                                  </li>
+                                  <li>
+                                    <div class="delete">
+                                      <i class="las la-trash"></i>
+                                    </div>
+                                    <img src="https://picsum.photos/id/14/500/500" alt="">
+                                  </li>
+                                  <li>
+                                    <div class="delete">
+                                      <i class="las la-trash"></i>
+                                    </div>
+                                    <img src="https://picsum.photos/id/16/500/500" alt="">
+                                  </li>
+                                  <li>
+                                    <div class="delete">
+                                      <i class="las la-trash"></i>
+                                    </div>
+                                    <img src="https://picsum.photos/id/18/500/500" alt="">
+                                  </li>
                                 </ul>
-
                               </div>
-
                             </div>
                           </div>
                         </div>
-                        <div class="variantRow d-flex gap mb-3">
-                          <div class="form-group mb-2 flex2">
-                            <label for="cat"><small>Variant Name</small></label>
-                            <input type="text" class="form-control" placeholder="Variant Name" value="Dark Gray">
+                        <div class="withImages">
+                          <div class="variantRow d-flex gap ">
+                            <div class="form-group flex2">
+                              <label for="cat"><small>Variant Name</small></label>
+                              <input type="text" class="form-control" placeholder="Variant Name" value="Dark Gray">
+                            </div>
+                            <div class="form-group flex2">
+                              <label for="cat"><small>Product MRP</small></label>
+                              <input type="number" class="form-control" placeholder="Product MRP">
+                            </div>
+                            <div class="form-group flex2">
+                              <label for="cat"><small>Opening Stock</small></label>
+                              <input type="number" class="form-control" placeholder="O.Stock">
+                            </div>
+                            <div class="form-group flex2">
+                              <label for="cat"><small>Featured Image</small></label>
+                              <input type="file" class="form-control">
+                            </div>
+                            <div class="form-group flex2">
+                              <label for="cat"><small>Product Images</small></label>
+                              <input type="file" class="form-control" multiple>
+                            </div>
                           </div>
-                          <div class="form-group mb-2 flex2">
-                            <label for="cat"><small>Product MRP</small></label>
-                            <input type="number" class="form-control" placeholder="Product MRP">
-                          </div>
-                          <div class="form-group mb-2 flex1">
-                            <label for="cat"><small>Opening Stock</small></label>
-                            <input type="number" class="form-control" placeholder="O.Stock">
-                          </div>
-                          <div class="form-group mb-2 flex2">
-                            <label for="cat"><small>Featured Image</small></label>
-                            <input type="file" class="form-control">
-                          </div>
-                          <div class="form-group mb-2 flex3">
-                            <label for="cat"><small>Product Images</small></label>
-                            <input type="file" class="form-control" multiple>
+                          <div class="imagesOrder">
+                            <div id="gallery" class=" mt-2 d-flex gap justify-content-between">
+                              <div class="featured">
+                                <div class="">
+                                  <small class="text-muted">Featured Image</small>
+                                </div>
+                                <img src="https://picsum.photos/id/55/100/100" alt="">
+                              </div>
+                              <div id="image-container" class="productGallery">
+                                <div class="">
+                                  <small class="text-muted">Product Images - drag and drop images to assign the
+                                    order.</small>
+                                </div>
+                                <ul class="image-list" class="">
+                                  <li>
+                                    <div class="delete">
+                                      <i class="las la-trash"></i>
+                                    </div>
+                                    <img src="https://picsum.photos/id/10/500/500" alt="">
+                                  </li>
+                                  <li>
+                                    <div class="delete">
+                                      <i class="las la-trash"></i>
+                                    </div>
+                                    <img src="https://picsum.photos/id/12/500/500" alt="">
+                                  </li>
+                                  <li>
+                                    <div class="delete">
+                                      <i class="las la-trash"></i>
+                                    </div>
+                                    <img src="https://picsum.photos/id/14/500/500" alt="">
+                                  </li>
+                                  <li>
+                                    <div class="delete">
+                                      <i class="las la-trash"></i>
+                                    </div>
+                                    <img src="https://picsum.photos/id/16/500/500" alt="">
+                                  </li>
+                                  <li>
+                                    <div class="delete">
+                                      <i class="las la-trash"></i>
+                                    </div>
+                                    <img src="https://picsum.photos/id/18/500/500" alt="">
+                                  </li>
+                                  <li>
+                                    <div class="delete">
+                                      <i class="las la-trash"></i>
+                                    </div>
+                                    <img src="https://picsum.photos/id/10/500/500" alt="">
+                                  </li>
+                                  <li>
+                                    <div class="delete">
+                                      <i class="las la-trash"></i>
+                                    </div>
+                                    <img src="https://picsum.photos/id/12/500/500" alt="">
+                                  </li>
+                                  <li>
+                                    <div class="delete">
+                                      <i class="las la-trash"></i>
+                                    </div>
+                                    <img src="https://picsum.photos/id/14/500/500" alt="">
+                                  </li>
+                                  <li>
+                                    <div class="delete">
+                                      <i class="las la-trash"></i>
+                                    </div>
+                                    <img src="https://picsum.photos/id/16/500/500" alt="">
+                                  </li>
+                                  <li>
+                                    <div class="delete">
+                                      <i class="las la-trash"></i>
+                                    </div>
+                                    <img src="https://picsum.photos/id/18/500/500" alt="">
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
                           </div>
                         </div>
-                        <div class="variantRow d-flex gap mb-3">
-                          <div class="form-group mb-2 flex2">
-                            <label for="cat"><small>Variant Name</small></label>
-                            <input type="text" class="form-control" placeholder="Variant Name" value="Dark Gray">
+                        <div class="withImages">
+                          <div class="variantRow d-flex gap ">
+                            <div class="form-group flex2">
+                              <label for="cat"><small>Variant Name</small></label>
+                              <input type="text" class="form-control" placeholder="Variant Name" value="Dark Gray">
+                            </div>
+                            <div class="form-group flex2">
+                              <label for="cat"><small>Product MRP</small></label>
+                              <input type="number" class="form-control" placeholder="Product MRP">
+                            </div>
+                            <div class="form-group flex2">
+                              <label for="cat"><small>Opening Stock</small></label>
+                              <input type="number" class="form-control" placeholder="O.Stock">
+                            </div>
+                            <div class="form-group flex2">
+                              <label for="cat"><small>Featured Image</small></label>
+                              <input type="file" class="form-control">
+                            </div>
+                            <div class="form-group flex2">
+                              <label for="cat"><small>Product Images</small></label>
+                              <input type="file" class="form-control" multiple>
+                            </div>
                           </div>
-                          <div class="form-group mb-2 flex2">
-                            <label for="cat"><small>Product MRP</small></label>
-                            <input type="number" class="form-control" placeholder="Product MRP">
-                          </div>
-                          <div class="form-group mb-2 flex1">
-                            <label for="cat"><small>Opening Stock</small></label>
-                            <input type="number" class="form-control" placeholder="O.Stock">
-                          </div>
-                          <div class="form-group mb-2 flex2">
-                            <label for="cat"><small>Featured Image</small></label>
-                            <input type="file" class="form-control">
-                          </div>
-                          <div class="form-group mb-2 flex3">
-                            <label for="cat"><small>Product Images</small></label>
-                            <input type="file" class="form-control" multiple>
+                          <div class="imagesOrder">
+                            <div id="gallery" class=" mt-2 d-flex gap justify-content-between">
+                              <div class="featured">
+                                <div class="">
+                                  <small class="text-muted">Featured Image</small>
+                                </div>
+                                <img src="https://picsum.photos/id/55/100/100" alt="">
+                              </div>
+                              <div id="image-container" class="productGallery">
+                                <div class="">
+                                  <small class="text-muted">Product Images - drag and drop images to assign the
+                                    order.</small>
+                                </div>
+                                <ul class="image-list" class="">
+                                  <li>
+                                    <div class="delete">
+                                      <i class="las la-trash"></i>
+                                    </div>
+                                    <img src="https://picsum.photos/id/10/500/500" alt="">
+                                  </li>
+                                  <li>
+                                    <div class="delete">
+                                      <i class="las la-trash"></i>
+                                    </div>
+                                    <img src="https://picsum.photos/id/12/500/500" alt="">
+                                  </li>
+                                  <li>
+                                    <div class="delete">
+                                      <i class="las la-trash"></i>
+                                    </div>
+                                    <img src="https://picsum.photos/id/14/500/500" alt="">
+                                  </li>
+                                  <li>
+                                    <div class="delete">
+                                      <i class="las la-trash"></i>
+                                    </div>
+                                    <img src="https://picsum.photos/id/16/500/500" alt="">
+                                  </li>
+                                  <li>
+                                    <div class="delete">
+                                      <i class="las la-trash"></i>
+                                    </div>
+                                    <img src="https://picsum.photos/id/18/500/500" alt="">
+                                  </li>
+                                  <li>
+                                    <div class="delete">
+                                      <i class="las la-trash"></i>
+                                    </div>
+                                    <img src="https://picsum.photos/id/10/500/500" alt="">
+                                  </li>
+                                  <li>
+                                    <div class="delete">
+                                      <i class="las la-trash"></i>
+                                    </div>
+                                    <img src="https://picsum.photos/id/12/500/500" alt="">
+                                  </li>
+                                  <li>
+                                    <div class="delete">
+                                      <i class="las la-trash"></i>
+                                    </div>
+                                    <img src="https://picsum.photos/id/14/500/500" alt="">
+                                  </li>
+                                  <li>
+                                    <div class="delete">
+                                      <i class="las la-trash"></i>
+                                    </div>
+                                    <img src="https://picsum.photos/id/16/500/500" alt="">
+                                  </li>
+                                  <li>
+                                    <div class="delete">
+                                      <i class="las la-trash"></i>
+                                    </div>
+                                    <img src="https://picsum.photos/id/18/500/500" alt="">
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
                           </div>
                         </div>
+
+
+
+
                       </div>
                     </div>
                   </div>
@@ -529,36 +724,13 @@
 
   <script>
     $(document).ready(function () {
-      var dropIndex;
-      $("#image-list").sortable({
-        update: function (event, ui) {
-          dropIndex = ui.item.index();
-        }
-      });
 
-      $('#submit').click(function (e) {
-        var imageIdsArray = [];
-        $('#image-list li').each(function (index) {
-          if (index <= dropIndex) {
-            var id = $(this).attr('id');
-            var split_id = id.split("_");
-            imageIdsArray.push(split_id[1]);
-          }
-        });
-
-        $.ajax({
-          url: 'reorderUpdate.php',
-          type: 'post',
-          data: {
-            imageIds: imageIdsArray
-          },
-          success: function (response) {
-            $("#txtresponse").css('display', 'inline-block');
-            $("#txtresponse").text(response);
-          }
-        });
-        e.preventDefault();
+      $(".productGallery .image-list").sortable({
+        placeholder: "ui-state-highlight"
       });
+      $(".productGallery .image-list").disableSelection();
+
+
     });
   </script>
 
@@ -592,6 +764,15 @@
         var targetBox = $("." + inputValue);
         $(".box").not(targetBox).hide();
         $(targetBox).show();
+      });
+    });
+  </script>
+
+  <script>
+    // delete product images
+    $(document).ready(function () {
+      $(".delete").click(function () {
+        $(this).parent().remove();
       });
     });
   </script>

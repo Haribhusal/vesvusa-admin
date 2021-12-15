@@ -203,24 +203,71 @@ table td .actions .action:hover {
   color: #fff !important;
 }
 
-.imagesOrder ul#image-list {
+.imagesOrder .featured img {
+  width: auto !important;
+  height: 60px;
+  border-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+.imagesOrder ul.image-list {
   list-style: none;
   padding: 0;
   margin-bottom: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 15px;
+  gap: 10px;
 }
 
-.imagesOrder ul#image-list li {
+.imagesOrder ul.image-list li {
+  position: relative;
   cursor: move;
 }
 
-.imagesOrder ul#image-list li img {
+.imagesOrder ul.image-list li .delete {
+  position: absolute;
+  display: none;
+  height: 20px;
+  line-height: 20px;
+  border-radius: 20px;
+  width: 20px;
+  left: 50%;
+  bottom: -10px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-align: center;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.imagesOrder ul.image-list li .delete:hover {
+  background-color: #930c0c;
+}
+
+.imagesOrder ul.image-list li .delete:hover i {
+  color: #fff;
+}
+
+.imagesOrder ul.image-list li .delete i {
+  font-size: 14px;
+}
+
+.imagesOrder ul.image-list li img {
   width: auto !important;
-  height: 100px;
+  height: 60px;
   border-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+.imagesOrder ul.image-list li:hover .delete {
+  display: block !important;
 }
 
 .withImages {
@@ -229,6 +276,13 @@ table td .actions .action:hover {
   -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   border-radius: 0px;
+}
+
+.ui-state-highlight {
+  width: 60px;
+  border: none;
+  border-radius: 5px !important;
+  background: #930c0c;
 }
 
 /*
