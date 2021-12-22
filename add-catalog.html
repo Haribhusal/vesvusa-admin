@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Vesvusa - Add Category </title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <!-- Choices.js-->
+  <link rel="stylesheet" href="vendor/choices.js/public/assets/styles/choices.min.css">
+  <!-- Google fonts - Muli-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:300,400,700">
+  <!-- theme stylesheet-->
+  <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+  <link rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <!-- Custom stylesheet - for your changes-->
+
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+
+
+
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Favicon-->
+  <link rel="shortcut icon" href="assets/images/logo.png">
+  <!-- Tweaks for older IEs-->
+  <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar navbar-expand-lg py-3 bg-dash-dark-2 border-bottom border-dash-dark-1 z-index-10">
+      <div class="search-panel">
+        <div class="search-inner d-flex align-items-center justify-content-center">
+          <div class="close-btn d-flex align-items-center position-absolute top-0 end-0 me-4 mt-2 cursor-pointer">
+            <span>Close </span>
+            <svg class="svg-icon svg-icon-md svg-icon-heavy text-gray-700 mt-1">
+              <use xlink:href="#close-1"> </use>
+            </svg>
+          </div>
+          <div class="row w-100">
+            <div class="col-lg-8 mx-auto">
+              <form class="px-4" id="searchForm" action="#">
+                <div class="input-group position-relative flex-column flex-lg-row flex-nowrap">
+                  <input class="form-control shadow-0 bg-none px-0 w-100" type="search" name="search"
+                    placeholder="What are you searching for...">
+                  <button
+                    class="btn btn-link text-gray-600 px-0 text-decoration-none fw-bold cursor-pointer text-center"
+                    type="submit">Search</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid d-flex align-items-center justify-content-between py-1">
+        <div class="navbar-header d-flex align-items-center"><a class="navbar-brand text-uppercase text-reset"
+            href="index.html">
+            <div class="brand-text brand-big">
+              <img src="assets/images/text.png" alt="">
+            </div>
+            <div class="brand-text brand-sm"><strong>Vesvusa</strong></div>
+          </a>
+          <button class="sidebar-toggle">
+            <svg class="svg-icon svg-icon-sm svg-icon-heavy transform-none">
+              <use xlink:href="#arrow-left-1"> </use>
+            </svg>
+          </button>
+        </div>
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item"><a class="search-open nav-link px-0" href="#">
+              <i class="las la-search"></i></a></li>
+          <!-- Messages dropdown -->
+          <li class="list-inline-item dropdown px-lg-2"><a class="nav-link text-reset px-1 px-lg-0"
+              id="navbarDropdownMenuLink1" href="#" data-bs-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              <i class="las la-sms"></i><span class="badge bg-dash-color-1">5</span></a>
+            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink1">
+              <li><a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="position-relative"><img class="avatar avatar-md" src="https://picsum.photos/id/5/200/200"
+                      alt="Nadia Halsey">
+                    <div class="availability-status bg-success"></div>
+                  </div>
+                  <div class="ms-3"> <strong class="d-block">Nadia Halsey</strong><span class="d-block text-xs">lorem
+                      ipsum dolor sit amit</span><small class="d-block">9:30am</small></div>
+                </a></li>
+
+              <li><a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="position-relative"><img class="avatar avatar-md" src="https://picsum.photos/id/5/200/200"
+                      alt="Nadia Halsey">
+                    <div class="availability-status bg-success"></div>
+                  </div>
+                  <div class="ms-3"> <strong class="d-block">Nadia Halsey</strong><span class="d-block text-xs">lorem
+                      ipsum dolor sit amit</span><small class="d-block">9:30am</small></div>
+                </a></li>
+              <li><a class="dropdown-item text-center message" href="#"> <strong>See All Messages <i
+                      class="fas fa-angle-right ms-1"></i></strong></a></li>
+            </ul>
+          </li>
+          <!-- Tasks dropdown                   -->
+          <li class="list-inline-item dropdown px-lg-2"><a class="nav-link text-reset px-1 px-lg-0"
+              id="navbarDropdownMenuLink2" href="#" data-bs-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              <i class="las la-tasks"></i><span class="badge bg-dash-color-3">9</span></a>
+            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink2">
+              <li><a class="dropdown-item" href="#">
+                  <div class="d-flex justify-content-between mb-1"><strong>Task 1</strong><span>40% complete</span>
+                  </div>
+                  <div class="progress" style="height: 2px">
+                    <div class="progress-bar bg-dash-color-1" role="progressbar" style="width: 40%" aria-valuenow="40"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </a></li>
+              <li><a class="dropdown-item" href="#">
+                  <div class="d-flex justify-content-between mb-1"><strong>Task 2</strong><span>20% complete</span>
+                  </div>
+                  <div class="progress" style="height: 2px">
+                    <div class="progress-bar bg-dash-color-2" role="progressbar" style="width: 20%" aria-valuenow="20"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </a></li>
+              <li><a class="dropdown-item" href="#">
+                  <div class="d-flex justify-content-between mb-1"><strong>Task 3</strong><span>70% complete</span>
+                  </div>
+                  <div class="progress" style="height: 2px">
+                    <div class="progress-bar bg-dash-color-3" role="progressbar" style="width: 70%" aria-valuenow="70"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </a></li>
+              <li><a class="dropdown-item" href="#">
+                  <div class="d-flex justify-content-between mb-1"><strong>Task 4</strong><span>40% complete</span>
+                  </div>
+                  <div class="progress" style="height: 2px">
+                    <div class="progress-bar bg-dash-color-4" role="progressbar" style="width: 40%" aria-valuenow="40"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </a></li>
+              <li><a class="dropdown-item" href="#">
+                  <div class="d-flex justify-content-between mb-1"><strong>Task 5</strong><span>30% complete</span>
+                  </div>
+                  <div class="progress" style="height: 2px">
+                    <div class="progress-bar bg-dash-color-1" role="progressbar" style="width: 30%" aria-valuenow="30"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </a></li>
+              <li> <a class="dropdown-item text-center" href="#"> <strong>See All Tasks <i
+                      class="fas fa-angle-right ms-1"></i></strong></a></li>
+            </ul>
+          </li>
+
+          <li class="list-inline-item dropdown px-lg-2"><a class="nav-link text-reset px-1 px-lg-0"
+              id="navbarDropdownMenuLink2" href="#" data-bs-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              <i class="las la-user"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink2">
+              <li><a class="dropdown-item" href="#">
+                  <div class="d-flex justify-content-between align-items-center"><strong>My Profile</strong><span>
+                      <i class="las la-user"></i>
+                    </span>
+                  </div>
+
+                </a></li>
+
+              <li><a class="dropdown-item" href="#">
+                  <div class="d-flex justify-content-between align-items-center"><strong>Logout</strong><span>
+                      <i class="las la-sign-out-alt"></i>
+                    </span>
+                  </div>
+
+                </a></li>
+
+            </ul>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="d-flex align-items-stretch">
+    <!-- Sidebar Navigation-->
+    <nav id="sidebar">
+      <!-- Sidebar Header-->
+
+    </nav>
+    <div class="page-content">
+      <!-- Page Header-->
+      <div class="bg-dash-dark-2 py-4">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-12 d-flex justify-content-between align-items-center">
+              <h2 class="h5 highlight_text mb-0 d-flex align-item-center">Catalog Management <i
+                  class="las la-angle-right icon_small px-2"></i>
+                Add Catalog
+              </h2>
+              <div class="action">
+                <a href="conf-category.html" class="btn btn-primary">Catalog List</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <section class="mt-0">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="form-group mb-3">
+                <label for="" class="d-block">
+                  <small class="text-muted">
+                    Catalog Type
+                  </small>
+                </label>
+                <select name="" id="" class="select" style="width: 100%;">
+                  <option value="">Select Catalog Type</option>
+                  <option value="">Catalog Type 1</option>
+                  <option value="">Catalog Type 2</option>
+                  <option value="">Catalog Type 3</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="form-group mb-3">
+                <label for="" class="d-block">
+                  <small class="text-muted">
+                    Catalog Type
+                  </small>
+                </label>
+                <select name="" id="" class="select" style="width: 100%;">
+                  <option value="">Select Catalog Type</option>
+                  <option value="">Catalog Type 1</option>
+                  <option value="">Catalog Type 2</option>
+                  <option value="">Catalog Type 3</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group mb-3">
+                <label for="" class="d-block">
+                  <small class="text-muted">
+                    Start Date
+                  </small>
+                </label>
+                <input type="date" name="" class="form-control" id="">
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group mb-3">
+                <label for="" class="d-block">
+                  <small class="text-muted">
+                    End Date
+                  </small>
+                </label>
+                <input type="date" name="" class="form-control" id="">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="form-group mb-3">
+                <label for="" class="d-block">
+                  <small class="text-muted">
+                    Catalog Item Title
+                  </small>
+                </label>
+                <input type="text" name="" placeholder="Item Title" class="form-control" id="">
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group mb-3">
+                <label for="" class="d-block">
+                  <small class="text-muted">
+                    Featured Image
+                  </small>
+                </label>
+                <input type="file" name="" class="form-control" id="">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="form-group">
+                <label for="">
+                  <small class="text-muted">
+                    Add Product associated with this catalog
+                  </small>
+                </label>
+              </div>
+              <div class="productIncluded card">
+                <div class="header px-4 d-flex mb-4 justify-content-between">
+                  <div class="searcharea">
+                    <form action="" class="productSearc d-flex gap">
+                      <input type="text" name="" id="" placeholder="Product Title" class="form-control searchToggle">
+                      <input type="text" name="" id="" placeholder="Product SKU" class="form-control searchToggle">
+                      <input type="text" name="" id="" placeholder="Product ID" class="form-control searchToggle">
+                      <button class="btn btn_default searchToggle">
+                        <i class="las la-search flipx"></i>
+                      </button>
+                    </form>
+                  </div>
+                  <div class="appearance d-flex">
+                    <button class="btn btn-default">
+                      <i class="las la-file-excel"></i>
+
+                    </button>
+                    <button class="btn btn-default">
+                      <i class="las la-border-all"></i>
+                    </button>
+                    <button class="btn btn-default">
+                      <i class="las la-list-ul"></i>
+                    </button>
+
+                  </div>
+
+
+                </div>
+                <div class="searchResult p-4">
+                  <div class="results">
+                    <!-- WHILE WE DONT FIND PRODUCT  -->
+
+                    <div class="no_product">
+                      <div class="d-flex py-4 flex-column justify-content-center align-items-center">
+                        <i class="las la-search flipx la-2x my-3"></i>
+                        <div class="heading d-flex">
+
+                          <h5 class="text-center">
+                            Search Products by It's Name, SKU or ID
+                          </h5>
+                        </div>
+
+                      </div>
+                    </div>
+                    <article class="mb-3">
+                      <div class="row">
+                        <div class="col-sm-2">
+                          <figure>
+                            <img src="https://picsum.photos/id/200/200/300" alt=""
+                              style="height: 100px; width: auto; object-fit: cover; object-position: center;">
+                          </figure>
+                        </div>
+                        <div class="col-sm-8">
+                          <div class="info">
+                            <h5 class="title mb-0">Product Name Here</h5>
+                            <small class="text-muted f14">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, cumque.
+                              Lorcing elit. Autem, cumque.
+                            </small>
+                            <div class="tags d-flex text-muted gap mt-2">
+                              <div class="tag">
+                                <small class="tag-item">
+                                  Fashion
+                                </small>
+                              </div>
+                              <div class="tag">
+                                <small class="tag-item">
+                                  Rs. 3400
+                                </small>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-2">
+                          <div class="action">
+                            <button class="btn btn_a">
+                              <i class="las la-plus"></i> Add Item
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="mb-3">
+                      <div class="row">
+                        <div class="col-sm-2">
+                          <figure>
+                            <img src="https://picsum.photos/id/200/200/300" alt=""
+                              style="height: 100px; width: auto; object-fit: cover; object-position: center;">
+                          </figure>
+                        </div>
+                        <div class="col-sm-8">
+                          <div class="info">
+                            <h5 class="title">Product Name Here</h5>
+                            <small class="text-muted f14">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elAutem, cumque.
+                            </small>
+                            <div class="tags d-flex text-muted gap mt-2">
+                              <div class="tag">
+                                <small class="tag-item">
+                                  Fashion
+                                </small>
+                              </div>
+                              <div class="tag">
+                                <small class="tag-item">
+                                  Rs. 3400
+                                </small>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-2">
+                          <div class="action">
+                            <button class="btn btn_a">
+                              <i class="las la-plus"></i> Add Item
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+
+                  </div>
+                </div>
+                <div class="productList px-4">
+                  <article class=" product d-flex gap  align-items-stretch ">
+                    <figure class="mb-0">
+                      <img src="https://picsum.photos/id/30/200/300" alt="">
+                    </figure>
+                    <div class="info d-flex align-items-center">
+                      <div class="wrap">
+                        <h5 class="title">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing.
+                        </h5>
+                        <p class="small">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi quas ipsam
+                          necessitatibus in quaerat.</p>
+                        <div class="tags d-flex text-muted gap mt-2">
+                          <div class="tag">
+                            <small class="tag-item">
+                              Fashion
+                            </small>
+                          </div>
+                          <div class="tag">
+                            <small class="tag-item">
+                              Rs. 3400
+                            </small>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="remove">
+                        <i class="las la-times"></i>
+                      </div>
+                    </div>
+                  </article>
+                  <article class=" product d-flex gap  align-items-stretch">
+                    <figure class="mb-0">
+                      <img src="https://picsum.photos/id/30/200/300" alt="">
+                    </figure>
+                    <div class="info d-flex align-items-center">
+                      <div class="wrap">
+                        <h5 class="title">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing.
+                        </h5>
+                        <p class="small">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi quas ipsam
+                          necessitatibus in quaerat.</p>
+                        <div class="tags d-flex text-muted gap mt-2">
+                          <div class="tag">
+                            <small class="tag-item">
+                              Fashion
+                            </small>
+                          </div>
+                          <div class="tag">
+                            <small class="tag-item">
+                              Rs. 3400
+                            </small>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="remove">
+                        <i class="las la-times"></i>
+                      </div>
+                    </div>
+                  </article>
+                  <article class=" product d-flex gap  align-items-stretch">
+                    <figure class="mb-0">
+                      <img src="https://picsum.photos/id/30/200/300" alt="">
+                    </figure>
+                    <div class="info d-flex align-items-center">
+                      <div class="wrap">
+                        <h5 class="title">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing.
+                        </h5>
+                        <p class="small">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi quas ipsam
+                          necessitatibus in quaerat.</p>
+                        <div class="tags d-flex text-muted gap mt-2">
+                          <div class="tag">
+                            <small class="tag-item">
+                              Fashion
+                            </small>
+                          </div>
+                          <div class="tag">
+                            <small class="tag-item">
+                              Rs. 3400
+                            </small>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="remove">
+                        <i class="las la-times"></i>
+                      </div>
+                    </div>
+                  </article>
+                  <article class=" product d-flex gap  align-items-stretch ">
+                    <figure class="mb-0">
+                      <img src="https://picsum.photos/id/30/200/300" alt="">
+                    </figure>
+                    <div class="info d-flex align-items-center">
+                      <div class="wrap">
+                        <h5 class="title">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing.
+                        </h5>
+                        <p class="small">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi quas ipsam
+                          necessitatibus in quaerat.</p>
+                        <div class="tags d-flex text-muted gap mt-2">
+                          <div class="tag">
+                            <small class="tag-item">
+                              Fashion
+                            </small>
+                          </div>
+                          <div class="tag">
+                            <small class="tag-item">
+                              Rs. 3400
+                            </small>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="remove">
+                        <i class="las la-times"></i>
+                      </div>
+                    </div>
+                  </article>
+                  <article class=" product d-flex gap  align-items-stretch">
+                    <figure class="mb-0">
+                      <img src="https://picsum.photos/id/30/200/300" alt="">
+                    </figure>
+                    <div class="info d-flex align-items-center">
+                      <div class="wrap">
+                        <h5 class="title">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing.
+                        </h5>
+                        <p class="small">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi quas ipsam
+                          necessitatibus in quaerat.</p>
+                        <div class="tags d-flex text-muted gap mt-2">
+                          <div class="tag">
+                            <small class="tag-item">
+                              Fashion
+                            </small>
+                          </div>
+                          <div class="tag">
+                            <small class="tag-item">
+                              Rs. 3400
+                            </small>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="remove">
+                        <i class="las la-times"></i>
+                      </div>
+                    </div>
+                  </article>
+                  <article class=" product d-flex gap  align-items-stretch">
+                    <figure class="mb-0">
+                      <img src="https://picsum.photos/id/30/200/300" alt="">
+                    </figure>
+                    <div class="info d-flex align-items-center">
+                      <div class="wrap">
+                        <h5 class="title">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing.
+                        </h5>
+                        <p class="small">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi quas ipsam
+                          necessitatibus in quaerat.</p>
+                        <div class="tags d-flex text-muted gap mt-2">
+                          <div class="tag">
+                            <small class="tag-item">
+                              Fashion
+                            </small>
+                          </div>
+                          <div class="tag">
+                            <small class="tag-item">
+                              Rs. 3400
+                            </small>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="remove">
+                        <i class="las la-times"></i>
+                      </div>
+                    </div>
+                  </article>
+                  <article class=" product d-flex gap  align-items-stretch ">
+                    <figure class="mb-0">
+                      <img src="https://picsum.photos/id/30/200/300" alt="">
+                    </figure>
+                    <div class="info d-flex align-items-center">
+                      <div class="wrap">
+                        <h5 class="title">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing.
+                        </h5>
+                        <p class="small">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi quas ipsam
+                          necessitatibus in quaerat.</p>
+                        <div class="tags d-flex text-muted gap mt-2">
+                          <div class="tag">
+                            <small class="tag-item">
+                              Fashion
+                            </small>
+                          </div>
+                          <div class="tag">
+                            <small class="tag-item">
+                              Rs. 3400
+                            </small>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="remove">
+                        <i class="las la-times"></i>
+                      </div>
+                    </div>
+                  </article>
+                  <article class=" product d-flex gap  align-items-stretch">
+                    <figure class="mb-0">
+                      <img src="https://picsum.photos/id/30/200/300" alt="">
+                    </figure>
+                    <div class="info d-flex align-items-center">
+                      <div class="wrap">
+                        <h5 class="title">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing.
+                        </h5>
+                        <p class="small">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi quas ipsam
+                          necessitatibus in quaerat.</p>
+                        <div class="tags d-flex text-muted gap mt-2">
+                          <div class="tag">
+                            <small class="tag-item">
+                              Fashion
+                            </small>
+                          </div>
+                          <div class="tag">
+                            <small class="tag-item">
+                              Rs. 3400
+                            </small>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="remove">
+                        <i class="las la-times"></i>
+                      </div>
+                    </div>
+                  </article>
+                  <article class=" product d-flex gap  align-items-stretch">
+                    <figure class="mb-0">
+                      <img src="https://picsum.photos/id/30/200/300" alt="">
+                    </figure>
+                    <div class="info d-flex align-items-center">
+                      <div class="wrap">
+                        <h5 class="title">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing.
+                        </h5>
+                        <p class="small">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi quas ipsam
+                          necessitatibus in quaerat.</p>
+                        <div class="tags d-flex text-muted gap mt-2">
+                          <div class="tag">
+                            <small class="tag-item">
+                              Fashion
+                            </small>
+                          </div>
+                          <div class="tag">
+                            <small class="tag-item">
+                              Rs. 3400
+                            </small>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="remove">
+                        <i class="las la-times"></i>
+                      </div>
+                    </div>
+                  </article>
+                  <article class=" product d-flex gap  align-items-stretch ">
+                    <figure class="mb-0">
+                      <img src="https://picsum.photos/id/30/200/300" alt="">
+                    </figure>
+                    <div class="info d-flex align-items-center">
+                      <div class="wrap">
+                        <h5 class="title">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing.
+                        </h5>
+                        <p class="small">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi quas ipsam
+                          necessitatibus in quaerat.</p>
+                        <div class="tags d-flex text-muted gap mt-2">
+                          <div class="tag">
+                            <small class="tag-item">
+                              Fashion
+                            </small>
+                          </div>
+                          <div class="tag">
+                            <small class="tag-item">
+                              Rs. 3400
+                            </small>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="remove">
+                        <i class="las la-times"></i>
+                      </div>
+                    </div>
+                  </article>
+                  <article class=" product d-flex gap  align-items-stretch">
+                    <figure class="mb-0">
+                      <img src="https://picsum.photos/id/30/200/300" alt="">
+                    </figure>
+                    <div class="info d-flex align-items-center">
+                      <div class="wrap">
+                        <h5 class="title">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing.
+                        </h5>
+                        <p class="small">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi quas ipsam
+                          necessitatibus in quaerat.</p>
+                        <div class="tags d-flex text-muted gap mt-2">
+                          <div class="tag">
+                            <small class="tag-item">
+                              Fashion
+                            </small>
+                          </div>
+                          <div class="tag">
+                            <small class="tag-item">
+                              Rs. 3400
+                            </small>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="remove">
+                        <i class="las la-times"></i>
+                      </div>
+                    </div>
+                  </article>
+                  <article class=" product d-flex gap  align-items-stretch">
+                    <figure class="mb-0">
+                      <img src="https://picsum.photos/id/30/200/300" alt="">
+                    </figure>
+                    <div class="info d-flex align-items-center">
+                      <div class="wrap">
+                        <h5 class="title">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing.
+                        </h5>
+                        <p class="small">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi quas ipsam
+                          necessitatibus in quaerat.</p>
+                        <div class="tags d-flex text-muted gap mt-2">
+                          <div class="tag">
+                            <small class="tag-item">
+                              Fashion
+                            </small>
+                          </div>
+                          <div class="tag">
+                            <small class="tag-item">
+                              Rs. 3400
+                            </small>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="remove">
+                        <i class="las la-times"></i>
+                      </div>
+                    </div>
+                  </article>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="position-absolute bottom-0 bg-dash-dark-2 text-white text-center py-3 w-100 text-xs" id="footer">
+        <div class="container-fluid text-center">
+          <p class="mb-0 text-dash-gray">2021 &copy; Your company. Design by <a target="_blank"
+              href="https://techcaresoft.com">Techcare Softwares</a>.</p>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <!-- JavaScript files-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/just-validate/js/just-validate.min.js"></script>
+  <script src="vendor/chart.js/Chart.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+
+  <script src="vendor/choices.js/public/assets/scripts/choices.min.js"></script>
+  <script src="js/charts-home.js"></script>
+  <!-- Main File-->
+  <script src="js/front.js"></script>
+
+
+  <script>
+    $(document).ready(function () {
+      $(".select").select2();
+    });
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $(".searchResult").hide();
+      $('.searchToggle').on('focus', function () {
+        $(".searchResult").show();
+      });
+    });
+  </script>
+
+  <script>
+    // ------------------------------------------------------- //
+    //   Inject SVG Sprite - 
+    //   see more here 
+    //   https://css-tricks.com/ajaxing-svg-sprite/
+    // ------------------------------------------------------ //
+    function injectSvgSprite(path) {
+
+      var ajax = new XMLHttpRequest();
+      ajax.open("GET", path, true);
+      ajax.send();
+      ajax.onload = function (e) {
+        var div = document.createElement("div");
+        div.className = 'd-none';
+        div.innerHTML = ajax.responseText;
+        document.body.insertBefore(div, document.body.childNodes[0]);
+      }
+    }
+    // this is set to BootstrapTemple website as you cannot 
+    // inject local SVG sprite (using only 'icons/orion-svg-sprite.svg' path)
+    // while using file:// protocol
+    // pls don't forget to change to your domain :)
+    injectSvgSprite('https://bootstraptemple.com/files/icons/orion-svg-sprite.svg');
+  </script>
+  <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</body>
+
+</html>

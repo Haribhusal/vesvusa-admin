@@ -243,3 +243,106 @@ table {
   border-radius: 5px !important;
   background: $a;
 }
+
+.flipx {
+  transform: scaleX(-1);
+}
+
+.productIncluded {
+  .product {
+    position: relative;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.06);
+
+    .remove {
+      text-align: center;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      i {
+        background-color: rgba(#fff, 0.1);
+        color: #fff !important;
+        cursor: pointer;
+        border-radius: 100px;
+        height: 30px;
+        width: 30px;
+        font-size: 20px;
+        line-height: 30px;
+      }
+    }
+  }
+  .productList {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+  }
+  article {
+    border-bottom: 1px solid rgba(#fff, 0.1);
+    .title {
+      transition: all 0.5s ease;
+    }
+    &:hover {
+      .title {
+        color: #fff !important;
+      }
+    }
+  }
+  .tag {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0 10px;
+    border-radius: 100px;
+  }
+  .header {
+    border-bottom: 1px solid rgba(#fff, 0.2);
+  }
+  .btn_default {
+    i {
+    }
+    &:focus {
+      box-shadow: none;
+      border-color: transparent;
+      border-radius: 0px;
+    }
+  }
+  .form-control {
+    border: none;
+    position: relative;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: -1px !important;
+    border-bottom: 1px solid rgba($a, 0.5);
+    &:focus {
+      border-bottom-color: rgba($a, 1);
+    }
+  }
+}
+
+.btn {
+  &:focus {
+    border-color: transparent !important;
+    box-shadow: none !important;
+  }
+}
+
+.catalogItemView {
+  .action {
+    width: 200px;
+    .value {
+      display: flex;
+      gap: 15px;
+      button {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+      }
+    }
+  }
+
+  .btn_a {
+    display: none;
+  }
+  &:hover {
+    .btn_a {
+      display: block !important;
+    }
+  }
+}
