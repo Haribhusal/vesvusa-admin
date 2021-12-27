@@ -346,3 +346,21 @@ table {
     }
   }
 }
+
+.campaign {
+  .heading {
+    .nav-tabs {
+      margin: 0px !important;
+      gap: 15px;
+      border: none;
+      .active {
+        background-color: $a !important;
+        color: #fff !important;
+      }
+    }
+    .nav-link {
+      border: none;
+      background-color: rgba($a, 0.1) !important;
+    }
+  }
+}
