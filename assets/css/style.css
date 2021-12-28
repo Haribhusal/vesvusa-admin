@@ -443,6 +443,28 @@ table td .actions .action:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
+.card_header_table {
+  background-color: #2f3131;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.footable-last-visible .btn {
+  padding: 0px !important;
+}
+
+.footable-last-visible .btn i {
+  font-size: 20px !important;
+  height: 30px;
+  width: 30px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  line-height: 30px;
+}
+
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -615,6 +637,18 @@ body {
 .btn_a i {
   margin-bottom: 0px !important;
   padding: 0px !important;
+}
+
+.btn-bordered {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.btn-bordered:focus, .btn-bordered:hover {
+  border: 1px solid #fff;
+}
+
+.badge-primary {
+  background-color: #e95f71;
 }
 
 i.las {

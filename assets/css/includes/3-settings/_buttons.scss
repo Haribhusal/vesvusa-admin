@@ -9,3 +9,15 @@
     padding: 0px !important;
   }
 }
+
+.btn-bordered {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  &:focus,
+  &:hover {
+    border: 1px solid #fff;
+  }
+}
+
+.badge-primary {
+  background-color: $a;
+}

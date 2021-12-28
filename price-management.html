@@ -256,7 +256,7 @@
 
                     <article class="mb-3">
                       <div class="row">
-                        <div class="col-sm-2">
+                        <div class="col-sm-1">
                           <figure>
                             <img src="https://picsum.photos/id/200/200/300" alt=""
                               style="height: 100px; width: auto; object-fit: cover; object-position: center;">
@@ -280,53 +280,80 @@
                                   Category Name
                                 </small>
                               </div>
+
+                            </div>
+                            <div class="history mt-3">
+                              <button class="btn btn-default btn-bordered" data-bs-toggle="modal"
+                                data-bs-target="#pricingHistory">
+                                <small>
+                                  View Pricing History
+                                </small>
+                              </button>
                             </div>
                           </div>
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-sm-7">
                           <div class="shadePrice">
-                            <div class="shade d-flex mb-2 align-items-center ">
-                              <div class="name flex2">
+                            <div class="shade d-flex mb-2 gap align-items-center ">
+                              <div class="name flex3">
                                 Shade name
                               </div>
                               <div class="append me-2">
                                 Rs.
                               </div>
                               <input type="text" value="3400" class="form-control flex4" placeholder="Shade 1 Price">
-                            </div>
-                            <div class="shade d-flex mb-2 align-items-center ">
-                              <div class="name flex2">
-                                Shade name
-                              </div>
-                              <div class="append me-2">
-                                Rs.
-                              </div>
-                              <input type="text" value="3250" class="form-control flex4" placeholder="Shade 1 Price">
-                            </div>
-                            <div class="shade d-flex mb-2 align-items-center ">
-                              <div class="name flex2">
-                                Shade name
-                              </div>
-                              <div class="append me-2">
-                                Rs.
-                              </div>
-                              <input type="text" value="1100" class="form-control flex4" placeholder="Shade 1 Price">
-                            </div>
-                            <div class="shade d-flex mb-2 align-items-center ">
-                              <div class="name flex2">
-                                Shade name
-                              </div>
-                              <div class="append me-2">
-                                Rs.
-                              </div>
-                              <input type="text" value="1500" class="form-control flex4" placeholder="Shade 1 Price">
-                            </div>
-
-                            <div class="shade d-flex mb-2 ">
-                              <div class="name flex2">
+                              <div class="append me-2 flex4">
+                                <input type="text" value="3400" class="form-control flex4" placeholder="Shade 1 MRP">
 
                               </div>
-                              <button class="btn btn_a flex1" style="width: auto;">
+                            </div>
+
+
+                            <div class="shade d-flex mb-2 gap align-items-center ">
+                              <div class="name flex3">
+                                Shade name
+                              </div>
+                              <div class="append me-2">
+                                Rs.
+                              </div>
+                              <input type="text" value="3400" class="form-control flex4" placeholder="Shade 1 Price">
+                              <div class="append me-2 flex4">
+                                <input type="text" value="3400" class="form-control flex4" placeholder="Shade 1 MRP">
+
+                              </div>
+                            </div>
+                            <div class="shade d-flex mb-2 gap align-items-center ">
+                              <div class="name flex3">
+                                Shade name
+                              </div>
+                              <div class="append me-2">
+                                Rs.
+                              </div>
+                              <input type="text" value="3400" class="form-control flex4" placeholder="Shade 1 Price">
+                              <div class="append me-2 flex4">
+                                <input type="text" value="3400" class="form-control flex4" placeholder="Shade 1 MRP">
+
+                              </div>
+                            </div>
+                            <div class="shade d-flex mb-2 gap align-items-center ">
+                              <div class="name flex3">
+                                Shade name
+                              </div>
+                              <div class="append me-2">
+                                Rs.
+                              </div>
+                              <input type="text" value="3400" class="form-control flex4" placeholder="Shade 1 Price">
+                              <div class="append me-2 flex4">
+                                <input type="text" value="3400" class="form-control flex4" placeholder="Shade 1 MRP">
+
+                              </div>
+                            </div>
+
+                            <div class="shade d-flex my-3 ">
+                              <div class="name">
+
+                              </div>
+                              <button class="btn btn_a " style="width: auto;">
                                 Update
                               </button>
                             </div>
@@ -357,6 +384,133 @@
       </footer>
     </div>
   </div>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="pricingHistory" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Pricing History</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <table class="table">
+
+            <thead>
+              <tr>
+                <td>
+                  Product Name
+                </td>
+                <td>
+                  Date
+                </td>
+                <td>
+                  Price
+                </td>
+                <td>MRP</td>
+                <td>Updated By</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="label">
+                    Blue Diamond
+                  </div>
+                  <small class="value">
+                    Blue Shade
+                  </small>
+                </td>
+                <td>
+                  <div class="label">
+                    June 27, 2020
+                  </div>
+                  <small class="value">
+                    11:43 PM
+                  </small>
+                </td>
+                <td>Rs. 2300</td>
+                <td>Rs. 4000</td>
+                <td>Admin</td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div class="label">
+                    Blue Diamond
+                  </div>
+                  <small class="value">
+                    Blue Shade
+                  </small>
+                </td>
+                <td>
+                  <div class="label">
+                    June 27, 2020
+                  </div>
+                  <small class="value">
+                    11:43 PM
+                  </small>
+                </td>
+                <td>Rs. 2300</td>
+                <td>Rs. 4000</td>
+                <td>Admin</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="label">
+                    Blue Diamond
+                  </div>
+                  <small class="value">
+                    Blue Shade
+                  </small>
+                </td>
+                <td>
+                  <div class="label">
+                    June 27, 2020
+                  </div>
+                  <small class="value">
+                    11:43 PM
+                  </small>
+                </td>
+                <td>Rs. 2300</td>
+                <td>Rs. 4000</td>
+                <td>Admin</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="label">
+                    Blue Diamond
+                  </div>
+                  <small class="value">
+                    Blue Shade
+                  </small>
+                </td>
+                <td>
+                  <div class="label">
+                    June 27, 2020
+                  </div>
+                  <small class="value">
+                    11:43 PM
+                  </small>
+                </td>
+                <td>Rs. 2300</td>
+                <td>Rs. 4000</td>
+                <td>Admin</td>
+              </tr>
+
+            </tbody>
+
+
+          </table>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- JavaScript files-->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

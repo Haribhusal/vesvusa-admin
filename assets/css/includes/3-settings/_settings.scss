@@ -397,3 +397,25 @@ table {
     }
   }
 }
+
+.card_header_table {
+  background-color: $p;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.footable-last-visible {
+  .btn {
+    padding: 0px !important;
+    i {
+      font-size: 20px !important;
+      height: 30px;
+      width: 30px;
+      background-color: rgba(#fff, 0.1);
+      border-radius: 30px;
+      line-height: 30px;
+    }
+  }
+}
