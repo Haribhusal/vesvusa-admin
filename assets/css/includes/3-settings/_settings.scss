@@ -364,3 +364,36 @@ table {
     }
   }
 }
+
+.couponTable {
+  .form_add {
+    background-color: rgba(#fff, 0.1);
+    padding: 15px;
+  }
+  .listwrapper {
+    .list_item {
+      background-color: rgba(#fff, 0.1);
+      padding: 10px 15px;
+      margin-bottom: 2px;
+      .list_item_data {
+        .actions {
+          display: flex;
+          gap: 10px;
+
+          .action {
+            text-align: center;
+            i {
+              height: 30px;
+              width: 30px;
+              border-radius: 30px;
+              font-size: 20px;
+              cursor: pointer;
+              line-height: 30px;
+              background-color: rgba(#fff, 0.1);
+            }
+          }
+        }
+      }
+    }
+  }
+}

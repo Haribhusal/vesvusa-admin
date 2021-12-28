@@ -411,6 +411,38 @@ table td .actions .action:hover {
   background-color: rgba(233, 95, 113, 0.1) !important;
 }
 
+.couponTable .form_add {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+}
+
+.couponTable .listwrapper .list_item {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px 15px;
+  margin-bottom: 2px;
+}
+
+.couponTable .listwrapper .list_item .list_item_data .actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.couponTable .listwrapper .list_item .list_item_data .actions .action {
+  text-align: center;
+}
+
+.couponTable .listwrapper .list_item .list_item_data .actions .action i {
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+  font-size: 20px;
+  cursor: pointer;
+  line-height: 30px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
 /*
   1. Use a more-intuitive box-sizing model.
 */
