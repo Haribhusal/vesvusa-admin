@@ -230,6 +230,67 @@ table {
   }
 }
 
+.ordersProcesses {
+  .active {
+    box-shadow: 0px 10px 30px rgba(#000, 0.1);
+  }
+  .wrapper {
+    border: 1px solid rgba(#fff, 0);
+    margin-bottom: 15px;
+    .vendorBar {
+      background-color: rgba(#fff, 0.03);
+      a {
+        color: rgba(#fff, 0.5);
+      }
+      i {
+        display: inline-block;
+        font-size: 14px !important;
+      }
+    }
+  }
+  .item {
+    figure {
+      img {
+        height: 60px;
+      }
+    }
+  }
+}
+
+.singleOrder {
+  .contactInfo {
+    display: none;
+    background-color: rgba(#fff, 0.03);
+
+    border-top: 1px solid rgba(#fff, 0.03);
+
+    .keypersons {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      .person {
+        padding: 20px;
+        img {
+          height: 60px;
+          width: 60px;
+          border-radius: 60px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+  .items {
+    .item {
+      background-color: rgba(255, 255, 255, 0.07);
+      padding: 15px;
+    }
+  }
+  .tablewrapper {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    font-size: 14px;
+  }
+}
 .withImages {
   padding: 25px;
   margin-bottom: 20px;
@@ -397,9 +458,47 @@ table {
     }
   }
 }
+.orderStatusMenu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 
+  .menu_item {
+    .link {
+      display: block;
+      padding: 10px 20px;
+      background: rgba($a, 0.1);
+    }
+  }
+  .active {
+    .link {
+      background-color: $a;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.form-check-input {
+  cursor: pointer !important;
+  border: 1px solid rgba($a, 0.5);
+  position: relative;
+
+  &:hover {
+    border-color: rgba($a, 1);
+  }
+  &:focus {
+    box-shadow: none;
+    outline: none;
+    border-color: transparent !important;
+  }
+}
 .card_header_table {
-  background-color: $p;
+  background-color: rgba(#fff, 0.03);
   position: sticky;
   top: 0;
   left: 0;
@@ -418,4 +517,14 @@ table {
       line-height: 30px;
     }
   }
+}
+
+.dataMoreToggle {
+  i {
+    transition: all 0.5s ease;
+    cursor: pointer;
+  }
+}
+.rotateIcon {
+  transform: rotate(-180deg);
 }

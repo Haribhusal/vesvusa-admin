@@ -270,6 +270,70 @@ table td .actions .action:hover {
   display: block !important;
 }
 
+.ordersProcesses .active {
+  -webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.ordersProcesses .wrapper {
+  border: 1px solid rgba(255, 255, 255, 0);
+  margin-bottom: 15px;
+}
+
+.ordersProcesses .wrapper .vendorBar {
+  background-color: rgba(255, 255, 255, 0.03);
+}
+
+.ordersProcesses .wrapper .vendorBar a {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.ordersProcesses .wrapper .vendorBar i {
+  display: inline-block;
+  font-size: 14px !important;
+}
+
+.ordersProcesses .item figure img {
+  height: 60px;
+}
+
+.singleOrder .contactInfo {
+  display: none;
+  background-color: rgba(255, 255, 255, 0.03);
+  border-top: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.singleOrder .contactInfo .keypersons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.singleOrder .contactInfo .keypersons .person {
+  padding: 20px;
+}
+
+.singleOrder .contactInfo .keypersons .person img {
+  height: 60px;
+  width: 60px;
+  border-radius: 60px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.singleOrder .items .item {
+  background-color: rgba(255, 255, 255, 0.07);
+  padding: 15px;
+}
+
+.singleOrder .tablewrapper {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  font-size: 14px;
+}
+
 .withImages {
   padding: 25px;
   margin-bottom: 20px;
@@ -443,8 +507,51 @@ table td .actions .action:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
+.orderStatusMenu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+}
+
+.orderStatusMenu .menu_item .link {
+  display: block;
+  padding: 10px 20px;
+  background: rgba(233, 95, 113, 0.1);
+}
+
+.orderStatusMenu .active .link {
+  background-color: #e95f71;
+}
+
+.orderStatusMenu .active .link:hover {
+  color: #fff;
+}
+
+.form-check-input {
+  cursor: pointer !important;
+  border: 1px solid rgba(233, 95, 113, 0.5);
+  position: relative;
+}
+
+.form-check-input:hover {
+  border-color: #e95f71;
+}
+
+.form-check-input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  border-color: transparent !important;
+}
+
 .card_header_table {
-  background-color: #2f3131;
+  background-color: rgba(255, 255, 255, 0.03);
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -463,6 +570,17 @@ table td .actions .action:hover {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 30px;
   line-height: 30px;
+}
+
+.dataMoreToggle i {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.rotateIcon {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
 }
 
 /*

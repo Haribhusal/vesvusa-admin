@@ -189,22 +189,27 @@
 
     </nav>
     <div class="page-content">
-      <div class="bg-dash-dark-2 py-4">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-sm-12 d-flex justify-content-between align-items-center">
-              <h2 class="h5 highlight_text mb-0 d-flex align-item-center">Order Details <i
-                  class="las la-angle-right icon_small px-2"></i>
-                Hari Bhusal
-              </h2>
 
-            </div>
-
-          </div>
-        </div>
-      </div>
       <section class="mt-0">
         <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-12">
+              <ul class="orderStatusMenu">
+                <li class="menu_item ">
+                  <a href="all-orders.html" class="link">New Orders</a>
+                </li>
+                <li class="menu_item active">
+                  <a href="single-order.html" class="link">Process Order</a>
+                </li>
+                <li class="menu_item">
+                  <a href="#" class="link">Cancel Orders</a>
+                </li>
+                <li class="menu_item">
+                  <a href="#" class="link">New Orders</a>
+                </li>
+              </ul>
+            </div>
+          </div>
           <div class="row">
             <div class="col-sm-12">
               <div class="card">
@@ -219,7 +224,7 @@
                         Nepal
                       </address>
                     </div>
-                    <div class="col-md-5 ">
+                    <div class="col-md-5 offset-sm-3 ">
                       <table>
                         <tbody>
                           <tr>
@@ -251,98 +256,271 @@
                         </tbody>
                       </table>
                     </div>
-                    <div class="col-sm-3">
-                      <div class=" ml-auto mb-2">
-                        <label for="">Payment Status</label>
-                        <select name="" id="" class="select form-control">
-                          <option value="">Paid</option>
-                          <option value="">Unpaid</option>
-                        </select>
-
-                      </div>
-                      <div class=" ml-auto">
-                        <label for="">Delivery Status</label>
-                        <select name="" id="" class="select form-control">
-                          <option value="">Pending</option>
-                          <option value="">Delivered</option>
-                        </select>
-
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-lg-12 table-responsive">
-                      <table
-                        class="table table-bordered aiz-table invoice-summary footable footable-1 breakpoint breakpoint-lg">
-                        <thead>
-                          <tr class="bg-trans-dark footable-header">
-
-                            <th data-breakpoints="lg" class="min-col">#</th>
-                            <th width="10%" class="footable-first-visible" style="display: table-cell;">Photo</th>
-                            <th class="text-uppercase footable-last-visible" style="display: table-cell;">Description
-                            </th>
-                            <th data-breakpoints="lg" class="text-uppercase">Delivery Type</th>
-                            <th data-breakpoints="lg" class="min-col text-center text-uppercase">
-                              QTY
-                            </th>
-                            <th data-breakpoints="lg" class="min-col text-center text-uppercase">
-                              Price
-                            </th>
-                            <th data-breakpoints="lg" class="min-col text-right text-uppercase">
-                              Total
-                            </th>
-                          </tr>
-                        </thead>
-                        <tbody>
-
-                          <tr>
-                            <td>1</td>
-                            <td class="footable-first-visible" style="display: table-cell;"><span
-                                class="footable-toggle fooicon fooicon-plus"></span>
-                              <a href="https://www.sajhadeal.bytechcare.com/product/pink-tshirt" target="_blank"><img
-                                  height="50"
-                                  src="https://www.sajhadeal.bytechcare.com/public/uploads/all/NeBVRqcKHNDvRLpOjkamWxdLdUjRApQX5uu2hg9Y.jpg"></a>
-                            </td>
-                            <td class="footable-last-visible" style="display: table-cell;">
-                              <strong><a href="https://www.sajhadeal.bytechcare.com/product/pink-tshirt" target="_blank"
-                                  class="text-muted">Pink tshirt</a></strong>
-                              <small>Amethyst-S</small>
-                            </td>
-                            <td>
-                              Home Delivery
-                            </td>
-                            <td class="text-center">1</td>
-                            <td class="text-center">Rs.900.00</td>
-                            <td class="text-center">Rs.900.00</td>
-                          </tr>
-                          <tr>
-                            <td>1</td>
-                            <td class="footable-first-visible" style="display: table-cell;"><span
-                                class="footable-toggle fooicon fooicon-plus"></span>
-                              <a href="https://www.sajhadeal.bytechcare.com/product/pink-tshirt" target="_blank"><img
-                                  height="50"
-                                  src="https://www.sajhadeal.bytechcare.com/public/uploads/all/NeBVRqcKHNDvRLpOjkamWxdLdUjRApQX5uu2hg9Y.jpg"></a>
-                            </td>
-                            <td class="footable-last-visible" style="display: table-cell;">
-                              <strong><a href="https://www.sajhadeal.bytechcare.com/product/pink-tshirt" target="_blank"
-                                  class="text-muted">Pink tshirt</a></strong>
-                              <small>Amethyst-S</small>
-                            </td>
-                            <td>
-                              Home Delivery
-                            </td>
-                            <td class="text-center">1</td>
-                            <td class="text-center">Rs.900.00</td>
-                            <td class="text-center">Rs.900.00</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
                   </div>
                   <div class="row">
-                    <div class="col-sm-6 offset-sm-6">
-                      <div class="clearfix float-right">
+                  </div>
+                  <div class="row singleOrder">
+                    <div class="col-sm-12 d-flex gap">
+                      <div class="items ordersProcesses flex6">
+                        <div class="wrapper">
+                          <div class="item d-flex gap">
+                            <div class="data">
+                              <div class="label">1</div>
+                            </div>
+                            <figure class="mb-0">
+                              <img src="https://picsum.photos/id/100/100/100" class="img-fluid" alt="">
+                            </figure>
+                            <div class="data flex3 ">
+                              <div class="label">Product Name X 2</div>
+                              <small class="text-muted">#009dad </small>
+                            </div>
+                            <div class="data">
+                              <div class="label">Rs. 3400</div>
+                              <small class="text-muted text-decoration-line-through">Rs. 4000</small>
+                            </div>
+                            <div class="data flex2">
+                              <div class="label">Rs 6800</div>
+                              <small class="text-muted">Total Price</small>
+                            </div>
+                            <div class="data">
+                              <div class="label">
+                                <div class="form-check form-switch">
+                                  <input class="form-check-input" type="checkbox" role="switch"
+                                    id="flexSwitchCheckChecked" checked>
+                                </div>
+                              </div>
+                              <small class="text-muted">Proceed?</small>
+                            </div>
+
+                          </div>
+                          <div class="vendorBar text-muted  px-3 py-2  small d-flex gap justify-content-between">
+                            <div class="vendorname d-flex gap">
+                              <div class="name"> <a href="#"><i class="las la-building"></i> Vendor Name</a></div>
+                              <div class="address"> <i class="las la-map"></i> New Baneshwor, Kathmandu</div>
+                            </div>
+                            <div class="contact d-flex gap">
+                              <div class="data">
+                                <a href="mailto:bhusalhari89@gmail.com?subject=Vesvusa - Order Query" target="_blank">
+                                  <i class="las la-envelope"></i></a>
+                              </div>
+                              <div class="data">
+                                <a href="tel:9847458523"> <i class="las la-phone"></i> 9847458523</a>
+                              </div>
+                            </div>
+                            <div class="data dataMoreToggle ">
+                              <div class="label">
+                                <i class="las la-angle-down"></i>
+                              </div>
+
+                            </div>
+                          </div>
+
+
+                          <div class="contactInfo">
+                            <div class="keypersons">
+                              <div class="person d-flex gap align-items-center">
+                                <figure class="mb-0">
+                                  <img src="https://picsum.photos/id/30/100/100" class="img-fluid" alt="">
+                                </figure>
+                                <div class="info">
+                                  <h5 class="name mb-0 ">Prakash Pokhrel</h5>
+                                  <div class="des small mb-2 text-muted">New Baneshwor, </div>
+                                  <a href="tel:9847458523" class="link d-block small"> 9847458523</a>
+                                  <a href="mailto:bhusalhari89@gmail.com" class="link d-block small">
+                                    bhusalhari89@gmail.com
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="person d-flex gap align-items-center">
+                                <figure class="mb-0">
+                                  <img src="https://picsum.photos/id/30/100/100" class="img-fluid" alt="">
+                                </figure>
+                                <div class="info">
+                                  <h5 class="name mb-0 ">Hari Bhusal</h5>
+                                  <div class="des small mb-2 text-muted">Managing Director</div>
+                                  <a href="tel:9847458523" class="link d-block small"> 9847458523</a>
+                                  <a href="mailto:bhusalhari89@gmail.com" class="link d-block small">
+                                    bhusalhari89@gmail.com
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="wrapper">
+                          <div class="item d-flex gap">
+                            <div class="data">
+                              <div class="label">1</div>
+                            </div>
+                            <figure class="mb-0">
+                              <img src="https://picsum.photos/id/100/100/100" class="img-fluid" alt="">
+                            </figure>
+                            <div class="data flex3 ">
+                              <div class="label">Product Name X 2</div>
+                              <small class="text-muted">#009dad </small>
+                            </div>
+                            <div class="data">
+                              <div class="label">Rs. 3400</div>
+                              <small class="text-muted text-decoration-line-through">Rs. 4000</small>
+                            </div>
+                            <div class="data flex2">
+                              <div class="label">Rs 6800</div>
+                              <small class="text-muted">Total Price</small>
+                            </div>
+                            <div class="data">
+                              <div class="label">
+                                <div class="form-check form-switch">
+                                  <input class="form-check-input" type="checkbox" role="switch"
+                                    id="flexSwitchCheckChecked" checked>
+                                </div>
+                              </div>
+                              <small class="text-muted">Proceed?</small>
+                            </div>
+
+                          </div>
+                          <div class="vendorBar text-muted  px-3 py-2  small d-flex gap justify-content-between">
+                            <div class="vendorname d-flex gap">
+                              <div class="name"> <a href="#"><i class="las la-building"></i> Vendor Name</a></div>
+                              <div class="address"> <i class="las la-map"></i> New Baneshwor, Kathmandu</div>
+                            </div>
+                            <div class="contact d-flex gap">
+                              <div class="data">
+                                <a href="mailto:bhusalhari89@gmail.com?subject=Vesvusa - Order Query" target="_blank">
+                                  <i class="las la-envelope"></i></a>
+                              </div>
+                              <div class="data">
+                                <a href="tel:9847458523"> <i class="las la-phone"></i> 9847458523</a>
+                              </div>
+                            </div>
+                            <div class="data dataMoreToggle ">
+                              <div class="label">
+                                <i class="las la-angle-down"></i>
+                              </div>
+
+                            </div>
+                          </div>
+
+
+                          <div class="contactInfo">
+                            <div class="keypersons">
+                              <div class="person d-flex gap align-items-center">
+                                <figure class="mb-0">
+                                  <img src="https://picsum.photos/id/30/100/100" class="img-fluid" alt="">
+                                </figure>
+                                <div class="info">
+                                  <h5 class="name mb-0 ">Prakash Pokhrel</h5>
+                                  <div class="des small mb-2 text-muted">New Baneshwor, </div>
+                                  <a href="tel:9847458523" class="link d-block small"> 9847458523</a>
+                                  <a href="mailto:bhusalhari89@gmail.com" class="link d-block small">
+                                    bhusalhari89@gmail.com
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="person d-flex gap align-items-center">
+                                <figure class="mb-0">
+                                  <img src="https://picsum.photos/id/30/100/100" class="img-fluid" alt="">
+                                </figure>
+                                <div class="info">
+                                  <h5 class="name mb-0 ">Hari Bhusal</h5>
+                                  <div class="des small mb-2 text-muted">Managing Director</div>
+                                  <a href="tel:9847458523" class="link d-block small"> 9847458523</a>
+                                  <a href="mailto:bhusalhari89@gmail.com" class="link d-block small">
+                                    bhusalhari89@gmail.com
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="wrapper">
+                          <div class="item d-flex gap">
+                            <div class="data">
+                              <div class="label">1</div>
+                            </div>
+                            <figure class="mb-0">
+                              <img src="https://picsum.photos/id/100/100/100" class="img-fluid" alt="">
+                            </figure>
+                            <div class="data flex3 ">
+                              <div class="label">Product Name X 2</div>
+                              <small class="text-muted">#009dad </small>
+                            </div>
+                            <div class="data">
+                              <div class="label">Rs. 3400</div>
+                              <small class="text-muted text-decoration-line-through">Rs. 4000</small>
+                            </div>
+                            <div class="data flex2">
+                              <div class="label">Rs 6800</div>
+                              <small class="text-muted">Total Price</small>
+                            </div>
+                            <div class="data">
+                              <div class="label">
+                                <div class="form-check form-switch">
+                                  <input class="form-check-input" type="checkbox" role="switch"
+                                    id="flexSwitchCheckChecked" checked>
+                                </div>
+                              </div>
+                              <small class="text-muted">Proceed?</small>
+                            </div>
+
+                          </div>
+                          <div class="vendorBar text-muted  px-3 py-2  small d-flex gap justify-content-between">
+                            <div class="vendorname d-flex gap">
+                              <div class="name"> <a href="#"><i class="las la-building"></i> Vendor Name</a></div>
+                              <div class="address"> <i class="las la-map"></i> New Baneshwor, Kathmandu</div>
+                            </div>
+                            <div class="contact d-flex gap">
+                              <div class="data">
+                                <a href="mailto:bhusalhari89@gmail.com?subject=Vesvusa - Order Query" target="_blank">
+                                  <i class="las la-envelope"></i></a>
+                              </div>
+                              <div class="data">
+                                <a href="tel:9847458523"> <i class="las la-phone"></i> 9847458523</a>
+                              </div>
+                            </div>
+                            <div class="data dataMoreToggle ">
+                              <div class="label">
+                                <i class="las la-angle-down"></i>
+                              </div>
+
+                            </div>
+                          </div>
+
+
+                          <div class="contactInfo">
+                            <div class="keypersons">
+                              <div class="person d-flex gap align-items-center">
+                                <figure class="mb-0">
+                                  <img src="https://picsum.photos/id/30/100/100" class="img-fluid" alt="">
+                                </figure>
+                                <div class="info">
+                                  <h5 class="name mb-0 ">Prakash Pokhrel</h5>
+                                  <div class="des small mb-2 text-muted">New Baneshwor, </div>
+                                  <a href="tel:9847458523" class="link d-block small"> 9847458523</a>
+                                  <a href="mailto:bhusalhari89@gmail.com" class="link d-block small">
+                                    bhusalhari89@gmail.com
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="person d-flex gap align-items-center">
+                                <figure class="mb-0">
+                                  <img src="https://picsum.photos/id/30/100/100" class="img-fluid" alt="">
+                                </figure>
+                                <div class="info">
+                                  <h5 class="name mb-0 ">Hari Bhusal</h5>
+                                  <div class="des small mb-2 text-muted">Managing Director</div>
+                                  <a href="tel:9847458523" class="link d-block small"> 9847458523</a>
+                                  <a href="mailto:bhusalhari89@gmail.com" class="link d-block small">
+                                    bhusalhari89@gmail.com
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+
+                      <div class="tablewrapper flex2">
                         <table class="table">
                           <tbody>
                             <tr>
@@ -387,10 +565,17 @@
                             </tr>
                           </tbody>
                         </table>
-
+                        <div class="actions d-flex gap justify-content-between">
+                          <button class="btn btn-secondary flex1">Cancel</button>
+                          <button class="btn btn-primary flex1">Proceed</button>
+                        </div>
                       </div>
+
                     </div>
+
+
                   </div>
+
 
 
                 </div>
@@ -421,6 +606,11 @@
   <script src="js/front.js"></script>
 
   <script type="text/javascript">
+    $('.ordersProcesses .dataMoreToggle').click(function () {
+      $(this).closest('.wrapper').find('.contactInfo').slideToggle();
+      $(this).find('i').toggleClass('rotateIcon');
+      $(this).closest('.wrapper').toggleClass('active');
+    });
     $(document).on("change", ".check-all", function () {
       if (this.checked) {
         // Iterate each checkbox
